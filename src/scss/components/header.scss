@@ -39,19 +39,7 @@
   gap: 35px;
   margin-left: 295px;
 
-  &__item {
-  }
-
   &__link {
-    position: relative;
-    font-weight: 400;
-    font-size: 1.12rem;
-    line-height: 1.67;
-    display: block;
-    transition: 250ms linear;
-
-    color: $text;
-
     &::after {
       content: "";
       position: absolute;
@@ -77,6 +65,9 @@
       color: $accent;
     }
   }
+
+  &__item {
+  }
 }
 
 .header-soclink {
@@ -84,23 +75,10 @@
   align-items: center;
   gap: 12px;
   margin-left: auto;
+
   &__item {
   }
 
   &__link {
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(60, 99, 130, 0.3);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 250ms linear;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
-      border-color: $accent;
-    }
   }
 }
