@@ -1,3 +1,7 @@
-body {
-  background-color: skyblue;
-}
+@import "./normalize/normalize";
+@import "./utils/mixin";
+@import "./utils/vars";
+@import "./utils/reset";
+@import "./components/general";
+
+@import "./components/header";
