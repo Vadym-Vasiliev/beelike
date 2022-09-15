@@ -27,6 +27,9 @@
     max-width: 520px;
     box-shadow: 0px 5px 30px rgba(60, 99, 130, 0.15);
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px 0;
 
     background-color: $white;
   }
@@ -48,7 +51,9 @@
   }
 
   &__bottom {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0 50px;
   }
 
   &__text {
@@ -61,6 +66,10 @@
     & > p span {
       color: $accent;
     }
+  }
+
+  &__btn {
+    margin-top: auto;
   }
 }
 
