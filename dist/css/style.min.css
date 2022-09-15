@@ -470,6 +470,7 @@ body {
 .works {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 .works__title {
   margin-bottom: 20px;
@@ -668,6 +669,7 @@ body {
   padding-top: 110px;
   padding-bottom: 110px;
   z-index: 1;
+  overflow: hidden;
 }
 .team__title {
   margin-bottom: 200px;
