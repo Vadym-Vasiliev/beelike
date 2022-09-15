@@ -467,6 +467,85 @@ body {
   text-align: center;
 }
 
+.team {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  z-index: 1;
+}
+.team__title {
+  margin-bottom: 200px;
+}
+.team__body {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px;
+}
+.team__bg {
+  position: absolute;
+  left: -4%;
+  top: 50%;
+  transform: translateY(-38%);
+  z-index: -1;
+}
+
+.team-left {
+  position: relative;
+  max-width: 537px;
+}
+.team-left__img {
+  width: 537px;
+  margin-bottom: 20px;
+}
+.team-left__content {
+  text-align: center;
+}
+.team-left__title, .team-left__text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.team-left__text {
+  font-weight: 400;
+}
+
+.team-right {
+  position: relative;
+  max-width: 436px;
+  text-align: center;
+}
+.team-right__logo {
+  width: 108px;
+  margin-bottom: 37px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-right__text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 187px;
+}
+.team-right__bottom {
+  position: relative;
+  display: -webkit-inline-box;
+  gap: 30px;
+  margin-left: -200px;
+  z-index: -2;
+}
+.team-right__img {
+  width: inherit;
+}
+.team-right__decor {
+  position: absolute;
+  top: -50px;
+  left: -70px;
+}
+.team-right__decor img {
+  width: 590px;
+}
+
 .packages {
   padding-top: 70px;
   padding-bottom: 140px;
@@ -580,7 +659,7 @@ body {
   background-color: #ffffff;
 }
 .callback-form__btn {
-  padding: 26px 33px;
+  padding: 25px 40px;
   margin-left: 0;
   margin-right: 0;
 }
