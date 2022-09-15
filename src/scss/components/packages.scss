@@ -1,0 +1,114 @@
+.packages {
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  background-color: $second-bg;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    width: 47px;
+  }
+}
+
+.packages-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    max-width: 520px;
+    box-shadow: 0px 5px 30px rgba(60, 99, 130, 0.15);
+    border-radius: 30px;
+
+    background-color: $white;
+  }
+
+  &__top {
+    padding: 45px;
+    border-radius: 30px 30px 0 0;
+
+    background-color: $blue-dark;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.87rem;
+    line-height: 0.67;
+    text-align: center;
+
+    color: $white;
+  }
+
+  &__bottom {
+    padding: 50px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.13;
+    text-align: center;
+    margin-bottom: 42px;
+
+    & > p span {
+      color: $accent;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 85px;
+    border-radius: 10px;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+
+    color: $white;
+    background-color: $accent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 16px);
+      height: calc(100% + 16px);
+      left: -8px;
+      top: -8px;
+      border: 2px solid $accent;
+      border-radius: 10px;
+      z-index: -1;
+      box-shadow: 0px 5px 15px #f8b053;
+
+      background-color: transparent;
+    }
+  }
+}
+
+.packages-infolist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
