@@ -481,16 +481,29 @@ body {
 .runline {
   padding-top: 50px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
-.runline__body {
+.runline__infinite {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 200%;
+  animation: runline__infinite 8s linear infinite;
 }
-.runline__text {
+@keyframes runline__infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.runline__title {
   font-weight: 700;
   font-size: 5rem;
   line-height: 1.18;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1.5px #c8c8c8;
 }
