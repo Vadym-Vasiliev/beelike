@@ -5,9 +5,10 @@ section.calculate
         .calculate__title.main-title
           h2 Давайте прорахуємо економію на замовленні?
         form.calculate-form
-          select.calculate-form__select
-            option.calculate-form__option(value="value1") Категорія
-            option.calculate-form__option(value="value2") Категорія2
+          .calculate-form__wrapper
+            select.calculate-form__select
+              option.calculate-form__option(value="value1") Категорія
+              option.calculate-form__option(value="value2") Категорія2
           label.calculate-form__label
             input.calculate-form__input(name="text" type="text" placeholder="Позиція")
           label.calculate-form__label
@@ -16,7 +17,5 @@ section.calculate
             input.calculate-form__input(name="text" type="text" placeholder="Населений пункт")
           .calculate-form__btn-box
             button.calculate-form__btn.main-btn(type="submit") Порахувати заявку
-      //- .calculate__right
-      //-   .calculate__img
-      //-     img(src="img/calculate-bg.png", alt="decor bg")      
+            
         
