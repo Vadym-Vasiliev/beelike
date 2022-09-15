@@ -433,6 +433,47 @@ body {
   gap: 12px;
   margin-left: auto;
 }
+.main {
+  padding-top: 245px;
+  padding-bottom: 240px;
+  background-image: url(../../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.main__body {
+  display: flex;
+  align-items: center;
+}
+.main__right {
+  width: 1010px;
+}
+
+.main-left__logo {
+  width: 271px;
+  margin-bottom: 12px;
+}
+.main-left__title {
+  font-weight: 600;
+  line-height: 1.18;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 56px;
+}
+.main-left__btns {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.main-left__btn {
+  padding: 25px 50px;
+}
+.main-left__btn--bg {
+  border: 2px solid #f8b053;
+  background-color: transparent;
+  color: #f8b053;
+}
+
 .problems {
   padding-top: 70px;
   padding-bottom: 100px;

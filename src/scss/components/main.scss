@@ -1,0 +1,52 @@
+.main {
+  padding-top: 245px;
+  padding-bottom: 240px;
+
+  background-image: url(../../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    width: 1010px;
+  }
+}
+
+.main-left {
+  &__top {
+  }
+
+  &__logo {
+    width: 271px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.18;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 56px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__btn {
+    padding: 25px 50px;
+
+    &--bg {
+      border: 2px solid $accent;
+      background-color: transparent;
+
+      color: $accent;
+    }
+  }
+}
