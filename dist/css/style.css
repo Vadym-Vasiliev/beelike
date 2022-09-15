@@ -357,8 +357,12 @@ body {
   border: none;
   z-index: 1;
   cursor: pointer;
+  transition: 250ms linear;
   color: #ffffff;
   background-color: #f8b053;
+}
+.main-btn:hover, .main-btn:focus {
+  transform: scale(1.02);
 }
 .main-btn::before {
   content: "";

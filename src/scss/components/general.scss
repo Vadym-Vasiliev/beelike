@@ -74,9 +74,15 @@ body {
   border: none;
   z-index: 1;
   cursor: pointer;
+  transition: 250ms linear;
 
   color: $white;
   background-color: $accent;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+  }
 
   &::before {
     content: "";
