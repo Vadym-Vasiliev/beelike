@@ -467,6 +467,60 @@ body {
   text-align: center;
 }
 
+.works {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.works__title {
+  margin-bottom: 20px;
+}
+.works__body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.works-left {
+  max-width: 568px;
+  margin-bottom: 70px;
+}
+.works-left__img {
+  width: 568px;
+}
+.works-left__content {
+  text-align: center;
+}
+.works-left__title, .works-left__text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.works-left__text {
+  font-weight: 400;
+}
+
+.works-right {
+  max-width: 729px;
+}
+.works-right__text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works-right__text:not(:last-child) {
+  margin-bottom: 6px;
+}
+.works-right__text:last-child {
+  margin-bottom: 13px;
+}
+.works-right__logo {
+  width: 729px;
+}
+
 .calculate {
   padding-top: 40px;
   padding-bottom: 70px;
