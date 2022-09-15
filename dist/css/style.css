@@ -467,6 +467,90 @@ body {
   text-align: center;
 }
 
+.calculate {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background-color: #2b3546;
+  background-image: url(../../img/calculate-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -1px;
+}
+.calculate__title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.calculate__left {
+  max-width: 787px;
+}
+.calculate__body {
+  display: flex;
+}
+.calculate__img {
+  width: 905px;
+}
+
+.calculate-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.calculate-form__select {
+  max-width: 520px;
+  min-height: 75px;
+  border-radius: 10px;
+  border: none;
+  padding: 27px 20px;
+  background-color: #ffffff;
+}
+.calculate-form__select:not(:last-child) {
+  margin-bottom: 30px;
+}
+.calculate-form__label {
+  max-width: 520px;
+  min-height: 75px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+}
+.calculate-form__label:not(:last-child) {
+  margin-bottom: 30px;
+}
+.calculate-form__input {
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.16;
+  opacity: 0.5;
+  padding: 27px 20px 27px 20px;
+  border: none;
+  width: 519px;
+  background-color: transparent;
+}
+.calculate-form__option {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3c6382;
+  opacity: 0.5;
+}
+.calculate-form__btn-box {
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 271px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+.calculate-form__btn {
+  padding: 25px 40px;
+}
+
 .team {
   position: relative;
   padding-top: 110px;
@@ -641,7 +725,6 @@ body {
   width: 410px;
   height: 85px;
   border-radius: 10px;
-  padding: 20px;
   display: flex;
   background-color: #ffffff;
 }
@@ -651,7 +734,8 @@ body {
   line-height: 1.16;
   opacity: 0.5;
   border: none;
-  width: 370px;
+  padding: 20px;
+  width: 409px;
 }
 .callback-form__btn-bg {
   padding: 8px;
