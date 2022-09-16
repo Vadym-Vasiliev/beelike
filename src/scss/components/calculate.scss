@@ -1,16 +1,28 @@
 .calculate {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 70px;
+  z-index: 1;
 
   background-color: $blue-dark;
-  background-image: url(../../img/calculate-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right -1px;
+  // background-image: url(../../img/calculate-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: right -1px;
+
+  @include mobile {
+    padding-top: 30px;
+  }
 
   &__title {
     color: $white;
     margin-bottom: 40px;
+
+    @include mobile {
+      font-size: 1.56rem;
+      line-height: 1.2;
+      margin-bottom: 350px;
+    }
   }
 
   &__left {
@@ -23,6 +35,17 @@
 
   &__img {
     width: 905px;
+  }
+
+  &__right {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    z-index: -1;
+
+    @include mobile {
+      top: 150px;
+    }
   }
 }
 
@@ -46,6 +69,14 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+
+    @include tablet-768 {
+      max-width: 450px;
+    }
+
+    @include mobile {
+      max-width: 290px;
+    }
   }
 
   &__input {
@@ -58,6 +89,16 @@
     width: 519px;
 
     background-color: transparent;
+
+    @include tablet-768 {
+      width: 450px;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.18;
+      width: 290px;
+    }
   }
 
   &__btn-box {
@@ -69,16 +110,41 @@
     margin-right: auto;
 
     background-color: $white;
+
+    @include mobile {
+      padding: 4px;
+    }
   }
 
   &__btn {
     padding: 25px 40px;
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.18;
+      padding: 15px 30px;
+    }
   }
 }
 
 .calculate-form {
+  @include tablet-768 {
+    align-items: center;
+  }
+
+  @include mobile {
+    align-items: center;
+  }
+
   &__dropdown {
     position: relative;
+
+    @include tablet-768 {
+      width: 450px;
+    }
+    @include mobile {
+      width: 290px;
+    }
   }
   &__dropbtn {
     position: relative;
@@ -99,6 +165,11 @@
     color: $text;
     background-color: $white;
 
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.18;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -113,6 +184,10 @@
       border-style: solid;
       border-width: 10px 8.5px 0 8.5px;
       border-color: #3c6382 transparent transparent transparent;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     &:not(:last-child) {

@@ -15,6 +15,54 @@
   <body> 
     <div class="wrapper">
       <main>
+        <section class="calculate">
+          <div class="container">
+            <div class="calculate__body">
+              <div class="calculate__left">
+                <div class="calculate__title main-title">
+                  <h2>Давайте прорахуємо економію на замовленні?</h2>
+                </div>
+                <form class="calculate-form">
+                  <div class="calculate-form__dropdown">
+                    <button class="calculate-form__dropbtn" type="button">Категорія</button>
+                    <ul class="calculate-form__list">
+                      <li class="calculate-form__item" data-value="value-1">
+                        <div class="calculate-form__text">
+                          <p>Добрива  </p>
+                        </div>
+                      </li>
+                      <li class="calculate-form__item" data-value="value-2">
+                        <div class="calculate-form__text">
+                          <p>Насіння</p>
+                        </div>
+                      </li>
+                      <li class="calculate-form__item" data-value="value-3">
+                        <div class="calculate-form__text">
+                          <p>ЗЗР</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <input class="calculate-form__input-hidden" type="text" name="select-category" value=""/>
+                  </div>
+                  <label class="calculate-form__label">
+                    <input class="calculate-form__input" name="text" type="text" placeholder="Позиція"/>
+                  </label>
+                  <label class="calculate-form__label">
+                    <input class="calculate-form__input" name="text" type="text" placeholder="Кількість"/>
+                  </label>
+                  <label class="calculate-form__label">
+                    <input class="calculate-form__input" name="text" type="text" placeholder="Населений пункт"/>
+                  </label>
+                  <div class="calculate-form__btn-box">
+                    <button class="calculate-form__btn main-btn" type="submit">Порахувати заявку</button>
+                  </div>
+                </form>
+                <form class="calculate-form"></form>
+              </div>
+            </div>
+            <div class="calculate__right"><img src="img/calculate-right.png" alt="people works"/></div>
+          </div>
+        </section>
         <section class="packages">
           <div class="container">
             <div class="packages__top">
