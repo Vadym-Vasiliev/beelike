@@ -66,6 +66,10 @@
     padding: 8px;
     border-radius: 10px;
     background-color: $white;
+
+    @include mobile {
+      padding: 4px;
+    }
   }
 
   &__btn {
