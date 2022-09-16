@@ -555,21 +555,66 @@ body {
   padding-bottom: 100px;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .works__title {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .works__title {
+    font-size: 1.56rem;
+    line-height: 1.2;
+  }
 }
 .works__body {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  gap: 50px;
+}
+@media screen and (max-width: 1280px) {
+  .works__body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works__body {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .works-left {
   max-width: 568px;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 1280px) {
+  .works-left {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works-left {
+    margin-bottom: 0;
+  }
+}
 .works-left__img {
   width: 568px;
+}
+@media screen and (max-width: 768px) {
+  .works-left__img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works-left__img {
+    width: 290px;
+  }
 }
 .works-left__content {
   text-align: center;
@@ -580,20 +625,47 @@ body {
   line-height: 1.5;
   margin-bottom: 4px;
 }
+@media screen and (max-width: 480px) {
+  .works-left__title, .works-left__text {
+    font-size: 1rem;
+    line-height: 1.18;
+  }
+}
 .works-left__text {
   font-weight: 400;
 }
+@media screen and (max-width: 1280px) {
+  .works-left__text {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works-left__text {
+    font-size: 0.87rem;
+    line-height: 1.21;
+  }
+}
 
 .works-right {
-  max-width: 729px;
+  max-width: 630px;
+}
+@media screen and (max-width: 768px) {
+  .works-right {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works-right {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .works-right__text {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5;
   max-width: 630px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .works-right__text:not(:last-child) {
   margin-bottom: 6px;
@@ -601,8 +673,29 @@ body {
 .works-right__text:last-child {
   margin-bottom: 13px;
 }
+@media screen and (max-width: 480px) {
+  .works-right__text {
+    font-size: 1rem;
+    line-height: 1.87;
+  }
+}
 .works-right__logo {
-  width: 729px;
+  width: 630px;
+  margin-left: -80px;
+}
+@media screen and (max-width: 768px) {
+  .works-right__logo {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works-right__logo {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .beelike {
