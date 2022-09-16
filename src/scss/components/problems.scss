@@ -2,8 +2,24 @@
   padding-top: 70px;
   padding-bottom: 100px;
   background-color: $second-bg;
+  @include tablet-768 {
+    overflow: hidden;
+  }
+
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
   &__top {
     margin-bottom: 80px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    @include mobile {
+      font-size: 1.56rem;
+      line-height: 1.2;
+    }
   }
 }
 .problems-list {
@@ -11,6 +27,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+
+  // @include tablet-768 {
+  //   flex-wrap: nowrap;
+  // }
   &__item {
     max-width: 234px;
     box-shadow: 0px 6px 20px rgba(60, 99, 130, 0.15);
@@ -30,5 +50,10 @@
     line-height: 1.39;
 
     text-align: center;
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.56;
+    }
   }
 }

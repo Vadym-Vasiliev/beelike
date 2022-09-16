@@ -521,8 +521,26 @@ body {
   padding-bottom: 100px;
   background-color: rgba(244, 244, 244, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .problems {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 480px) {
+  .problems {
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
+}
 .problems__top {
   margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .problems__title {
+    font-size: 1.56rem;
+    line-height: 1.2;
+  }
 }
 
 .problems-list {
@@ -548,6 +566,12 @@ body {
   font-size: 1.12rem;
   line-height: 1.39;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .problems-list__text {
+    font-size: 1rem;
+    line-height: 1.56;
+  }
 }
 
 .works {
