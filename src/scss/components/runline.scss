@@ -8,6 +8,18 @@
     padding-bottom: 50px;
   }
 
+  @include tablet {
+    padding-top: 650px;
+  }
+
+  @include tablet-768 {
+    padding-top: 450px;
+  }
+
+  @include mobile {
+    padding-top: 250px;
+  }
+
   &__infinite {
     display: flex;
     align-items: center;

@@ -1,18 +1,66 @@
 .main {
+  position: relative;
   padding-top: 245px;
   padding-bottom: 240px;
+  z-index: 1;
 
-  background-image: url(../../img/main-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  // background-image: url(../../img/main-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: right;
+
+  @include desktop-1680 {
+    padding-bottom: 110px;
+  }
+
+  @include desktop-1280 {
+    padding-bottom: 0;
+  }
+
+  @include tablet {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 50px;
+  }
 
   &__body {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
   &__right {
     width: 1010px;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @include desktop-1280 {
+      width: 780px;
+    }
+
+    @include tablet {
+      bottom: -600px;
+    }
+
+    @include tablet-768 {
+      width: 480px;
+      bottom: -400px;
+    }
+
+    @include mobile {
+      width: 290px;
+      bottom: -210px;
+    }
   }
 }
 
@@ -23,6 +71,15 @@
   &__logo {
     width: 271px;
     margin-bottom: 12px;
+
+    @include tablet-768 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mobile {
+      width: 190px;
+    }
   }
 
   &__title {
@@ -31,12 +88,40 @@
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 56px;
+
+    @include tablet-768 {
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 1.56rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
   }
 
   &__btns {
     display: flex;
     align-items: center;
     gap: 60px;
+
+    @include desktop-1680 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include tablet-768 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mobile {
+      gap: 30px;
+    }
   }
 
   &__btn {
@@ -47,6 +132,12 @@
       background-color: transparent;
 
       color: $accent;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.18;
+      padding: 15px 30px;
     }
   }
 }
