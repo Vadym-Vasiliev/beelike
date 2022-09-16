@@ -7,6 +7,10 @@ body {
 
   color: $text;
   background-color: $white;
+
+  &.burger-menu-open {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

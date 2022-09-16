@@ -6,32 +6,33 @@ header.header
           a(href="#")
             .header__img
               img(src="img/logo.svg", alt="beelike logo")
-      ul.header-list
-        li.header-list__item 
-          a.header-list__link.main-nav(href="#") <span>Про сервіс</span>
-        li.header-list__item 
-          a.header-list__link.main-nav(href="#") <span>Команда</span>
-        li.header-list__item 
-          a.header-list__link.main-nav(href="#") <span>Тарифи</span>
-        li.header-list__item 
-          a.header-list__link.main-nav(href="#") <span>Подати заявку</span>
-        li.header-list__item 
-          a.header-list__link.main-nav(href="#") <span>Контакти </span>
-      ul.header-soclink
-        li.header-soclink__item
-          a.header-soclink__link.main-soclink(href="#")
-            .header-soclink__img
-              svg(width="28" height="28")
-                use(href="img/icons/icons.svg#instagram")
-        li.header-soclink__item
+      .header__menu
+        ul.header-list
+          li.header-list__item 
+            a.header-list__link.main-nav(href="#") <span>Про сервіс</span>
+          li.header-list__item 
+            a.header-list__link.main-nav(href="#") <span>Команда</span>
+          li.header-list__item 
+            a.header-list__link.main-nav(href="#") <span>Тарифи</span>
+          li.header-list__item 
+            a.header-list__link.main-nav(href="#") <span>Подати заявку</span>
+          li.header-list__item 
+            a.header-list__link.main-nav(href="#") <span>Контакти </span>
+      .header__right-wrapper
+        ul.header-soclink
+          li.header-soclink__item
             a.header-soclink__link.main-soclink(href="#")
-              .header-soclink__img
-                svg(width="16" height="28")
+              svg.header-soclink__img(width="28" height="28")
+                use(href="img/icons/icons.svg#instagram")
+          li.header-soclink__item
+              a.header-soclink__link.main-soclink(href="#")
+                svg.header-soclink__img(width="16" height="28")
                   use(href="img/icons/icons.svg#facebook")
-      .header__right
-        .header__tel
-          a(href="tel:+380934277900") <span>+ 380 93 427 79 00</span>
-
+        .header__right
+          .header__tel
+            a(href="tel:+380934277900") <span>+ 380 93 427 79 00</span>
+      button.header__burger(type="button")
+        span.header__span
 
 
    

@@ -295,6 +295,9 @@ body {
   color: #3c6382;
   background-color: #ffffff;
 }
+body.burger-menu-open {
+  overflow: hidden;
+}
 
 .wrapper {
   display: flex;
@@ -390,9 +393,33 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media screen and (max-width: 480px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
 .header__body {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__body {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__body {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .header__logo {
   display: inline-block;
@@ -410,15 +437,132 @@ body {
 .header__tel > a:hover, .header__tel > a:focus {
   color: #f8b053;
 }
+@media screen and (max-width: 480px) {
+  .header__tel > a {
+    font-size: 0.87rem;
+    line-height: 1.2;
+  }
+}
 .header__right {
   margin-left: auto;
+}
+.header__right-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
+  column-gap: 51px;
+}
+@media screen and (max-width: 1280px) {
+  .header__right-wrapper {
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__right-wrapper {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__right-wrapper {
+    margin-left: auto;
+    flex-direction: row-reverse;
+    column-gap: 20px;
+  }
+}
+.header__burger {
+  position: relative;
+  width: 30px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+  background-color: transparent;
+}
+@media screen and (max-width: 480px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__burger--open .header__span {
+  height: 0;
+}
+.header__burger--open .header__span::after {
+  transform: rotate(45deg);
+  margin-top: 0;
+}
+.header__burger--open .header__span::before {
+  transform: rotate(-45deg);
+  margin-top: 0;
+}
+.header__span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  display: block;
+  background-color: #3c6382;
+}
+.header__span::before, .header__span::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 7px;
+  transition: 250ms linear;
+  background-color: #3c6382;
+}
+.header__span::after {
+  margin-top: -7px;
+}
+@media screen and (max-width: 480px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu--open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  background-color: #f5f5f5;
+}
+.header__menu--open > .header-list {
+  margin-top: 120px;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .header-list {
   display: flex;
   align-items: center;
   gap: 35px;
+  flex-wrap: wrap;
   margin-left: 295px;
+}
+@media screen and (max-width: 1280px) {
+  .header-list {
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-list {
+    margin-left: 195px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-list {
+    margin-left: 0;
+  }
 }
 .header-list__link::after {
   content: "";
@@ -439,12 +583,26 @@ body {
 .header-list__link:hover, .header-list__link:focus {
   color: #f8b053;
 }
+
 .header-soclink {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-left: auto;
 }
+@media screen and (max-width: 480px) {
+  .header-soclink__link {
+    width: 21px;
+    height: 21px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-soclink__img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 .main {
   position: relative;
   padding-top: 245px;
@@ -459,17 +617,23 @@ body {
 @media screen and (max-width: 1280px) {
   .main {
     padding-bottom: 0;
+    padding-top: 180px;
   }
 }
 @media screen and (max-width: 1024px) {
   .main {
     padding-bottom: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .main {
-    padding-top: 50px;
+    padding-top: 25px;
   }
 }
 .main__body {
