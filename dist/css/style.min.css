@@ -1493,13 +1493,63 @@ body.burger-menu-open {
   z-index: 1;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .team::after {
+    content: "";
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    background-color: #eeeeee;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
 .team__title {
   margin-bottom: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .team__title {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title {
+    font-size: 1.56rem;
+    line-height: 0.8;
+    margin-bottom: 60px;
+  }
 }
 .team__body {
   display: flex;
   align-items: flex-start;
   gap: 150px;
+}
+@media screen and (max-width: 1280px) {
+  .team__body {
+    gap: 50px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team__body {
+    gap: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__body {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
 }
 .team__bg {
   position: absolute;
@@ -1508,14 +1558,43 @@ body.burger-menu-open {
   transform: translateY(-38%);
   z-index: -1;
 }
+@media screen and (max-width: 480px) {
+  .team__bg {
+    display: none;
+  }
+}
 
 .team-left {
   position: relative;
   max-width: 537px;
 }
+@media screen and (max-width: 1024px) {
+  .team-left {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-left {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
 .team-left__img {
   width: 537px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .team-left__img {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-left__img {
+    width: 217px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .team-left__content {
   text-align: center;
@@ -1535,17 +1614,46 @@ body.burger-menu-open {
   max-width: 436px;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .team-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .team-right__logo {
   width: 108px;
   margin-bottom: 37px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 480px) {
+  .team-right__logo {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+}
 .team-right__text {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 187px;
+}
+@media screen and (max-width: 768px) {
+  .team-right__text {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-right__text {
+    font-size: 1rem;
+    line-height: 1.25;
+    max-width: 243px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
 }
 .team-right__bottom {
   position: relative;
@@ -1557,13 +1665,49 @@ body.burger-menu-open {
 .team-right__img {
   width: inherit;
 }
+@media screen and (max-width: 480px) {
+  .team-right__img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .team-right__decor {
   position: absolute;
   top: -50px;
   left: -70px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .team-right__decor {
+    top: -20px;
+    left: -25px;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-right__decor {
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
 .team-right__decor img {
   width: 590px;
+}
+@media screen and (max-width: 768px) {
+  .team-right__decor img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-right__decor img {
+    width: 334px;
+  }
+}
+.team-right__top {
+  text-align: center;
 }
 
 .packages {
