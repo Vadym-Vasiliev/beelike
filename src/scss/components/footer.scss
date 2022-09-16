@@ -15,14 +15,33 @@
   }
 }
 
+.footer-list-wrapper {
+  @include mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
 .footer-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 25px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    text-align: right;
+    margin-bottom: 15px;
+  }
   &__link {
     display: inline-block;
+    @include mobile {
+      font-size: 1rem;
+    }
     &:hover,
     &:focus {
       color: $accent;
@@ -37,6 +56,9 @@
   gap: 15px;
   max-width: 185px;
   margin-bottom: 33px;
+  @include mobile {
+    margin-bottom: 15px;
+  }
   &__link {
     font-weight: 400;
     font-size: 1rem;
@@ -60,4 +82,26 @@
   align-items: center;
   gap: 12px;
   margin-top: 27px;
+  @include mobile {
+    margin-top: 23px;
+  }
+
+  &__link {
+    @include mobile {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__img {
+    @include mobile {
+      width: 22px;
+      height: 22px;
+
+      &--wd {
+        width: 13px;
+        height: 22px;
+      }
+    }
+  }
 }
