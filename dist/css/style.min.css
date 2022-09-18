@@ -1024,17 +1024,61 @@ body.burger-menu-open {
   background-size: 1790px;
   background-position: 34px 275px;
 }
+@media screen and (max-width: 768px) {
+  .beelike {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../../img/beelike-mobile-decor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../../img/beelike-mobile-decor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 370px;
+  }
+}
 .beelike__title {
   max-width: 880px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 175px;
 }
+@media screen and (max-width: 480px) {
+  .beelike__title {
+    font-size: 1.56rem;
+    line-height: 1.2;
+    margin-bottom: 110px;
+  }
+}
 
 .beelike-body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .beelike-body {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .beelike-body {
+    flex-direction: column;
+    gap: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body {
+    flex-wrap: wrap;
+    gap: 120px;
+  }
 }
 .beelike-body__left, .beelike-body__right, .beelike-body__wrapper {
   position: relative;
@@ -1043,6 +1087,16 @@ body.burger-menu-open {
   padding: 10px;
   z-index: 1;
   margin-right: 70px;
+}
+@media screen and (max-width: 768px) {
+  .beelike-body__left, .beelike-body__right, .beelike-body__wrapper {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body__left, .beelike-body__right, .beelike-body__wrapper {
+    margin-right: 0;
+  }
 }
 .beelike-body__left::after, .beelike-body__right::after, .beelike-body__wrapper::after {
   content: "";
@@ -1056,14 +1110,62 @@ body.burger-menu-open {
   background-image: url(../../img/beelike-bg.png);
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .beelike-body__left::after, .beelike-body__right::after, .beelike-body__wrapper::after {
+    height: 333px;
+    width: 370px;
+    background-image: url(../../img/beelike-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body__left::after, .beelike-body__right::after, .beelike-body__wrapper::after {
+    height: 333px;
+    width: 370px;
+    background-image: url(../../img/beelike-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
 .beelike-body__left--top, .beelike-body__right--top, .beelike-body__wrapper--top {
   margin-bottom: 160px;
+}
+@media screen and (max-width: 768px) {
+  .beelike-body__left--top, .beelike-body__right--top, .beelike-body__wrapper--top {
+    margin-bottom: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body__left--top, .beelike-body__right--top, .beelike-body__wrapper--top {
+    margin-bottom: 130px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .beelike-body__right {
+    margin-right: 390px;
+    margin-top: -40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .beelike-body__right {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 .beelike-body__img {
   width: 120px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .beelike-body__img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body__img {
+    width: 100px;
+  }
 }
 .beelike-body__text {
   font-weight: 600;
@@ -1072,10 +1174,25 @@ body.burger-menu-open {
   text-align: center;
   max-width: 250px;
 }
+@media screen and (max-width: 768px) {
+  .beelike-body__text {
+    font-size: 1rem;
+    line-height: 1.56rem;
+    max-width: 255px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike-body__text {
+    font-size: 1rem;
+    line-height: 1.56rem;
+    max-width: 255px;
+  }
+}
 
 .scheme {
   position: relative;
   padding-bottom: 150px;
+  padding-top: 100px;
   background-image: url(../../img/scheme-decor.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -1098,10 +1215,16 @@ body.burger-menu-open {
 @media screen and (max-width: 480px) {
   .scheme {
     padding-bottom: 100px;
+    padding-top: 50px;
     background-image: url(../../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .scheme {
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 480px) {

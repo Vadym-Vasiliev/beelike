@@ -1,6 +1,7 @@
 .scheme {
   position: relative;
   padding-bottom: 150px;
+  padding-top: 100px;
 
   background-image: url(../../img/scheme-decor.png);
   background-repeat: no-repeat;
@@ -22,11 +23,16 @@
 
   @include mobile {
     padding-bottom: 100px;
+    padding-top: 50px;
 
     background-image: url(../../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 80%;
+  }
+
+  @include tablet-768 {
+    padding-top: 50px;
   }
 
   &__title {
