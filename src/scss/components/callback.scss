@@ -35,10 +35,10 @@
   }
 
   &__label {
+    position: relative;
     width: 410px;
     height: 85px;
     border-radius: 10px;
-
     display: flex;
 
     background-color: $white;
@@ -56,6 +56,12 @@
     border: none;
     padding: 20px;
     width: 409px;
+
+    & + .error {
+      position: absolute;
+      top: -20px;
+      color: red;
+    }
 
     @include mobile {
       font-size: 1rem;

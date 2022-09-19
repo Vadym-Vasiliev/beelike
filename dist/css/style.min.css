@@ -483,8 +483,20 @@ body.burger-menu-open {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 @media screen and (max-width: 480px) {
   .header {
@@ -698,7 +710,7 @@ body.burger-menu-open {
 
 .main {
   position: relative;
-  padding-top: 245px;
+  padding-top: 265px;
   padding-bottom: 240px;
   z-index: 1;
 }
@@ -710,23 +722,23 @@ body.burger-menu-open {
 @media screen and (max-width: 1280px) {
   .main {
     padding-bottom: 0;
-    padding-top: 180px;
+    padding-top: 305px;
   }
 }
 @media screen and (max-width: 1024px) {
   .main {
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 150px;
   }
 }
 @media screen and (max-width: 768px) {
   .main {
-    padding-top: 0;
+    padding-top: 270px;
   }
 }
 @media screen and (max-width: 480px) {
   .main {
-    padding-top: 25px;
+    padding-top: 85px;
   }
 }
 .main > .container {
@@ -971,6 +983,41 @@ body.burger-menu-open {
     font-size: 1rem;
     line-height: 1.56;
   }
+}
+
+.problems .slick-arrow {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c6382;
+}
+.problems .slick-arrow::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  margin-left: 30px;
+  background-color: rgba(60, 99, 130, 0.262745098);
+}
+.problems .slick-arrow::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin-left: -30px;
+  background-color: rgba(60, 99, 130, 0.262745098);
 }
 
 .works {
@@ -1812,6 +1859,7 @@ body.burger-menu-open {
   padding-top: 40px;
   padding-bottom: 70px;
   z-index: 1;
+  overflow: hidden;
   background-color: #2b3546;
 }
 .calculate > .container {
@@ -1865,7 +1913,7 @@ body.burger-menu-open {
 .calculate__right {
   position: absolute;
   top: -6%;
-  right: -25%;
+  right: -22.7%;
   z-index: -1;
 }
 @media screen and (max-width: 1680px) {
@@ -1905,6 +1953,7 @@ body.burger-menu-open {
   margin-bottom: 0;
 }
 .calculate-form__label {
+  position: relative;
   max-width: 520px;
   min-height: 75px;
   border-radius: 10px;
@@ -1934,6 +1983,12 @@ body.burger-menu-open {
   border: none;
   width: 519px;
   background-color: transparent;
+}
+.calculate-form__input + .error {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: red;
 }
 @media screen and (max-width: 768px) {
   .calculate-form__input {
@@ -2344,13 +2399,14 @@ body.burger-menu-open {
   height: 30px;
   border: none;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 0;
   background-color: transparent;
   background-image: url(../../img/team-prev.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 .team .slick-arrow::after {
   content: "";
@@ -2366,6 +2422,7 @@ body.burger-menu-open {
   background-color: transparent;
   background-image: url(../../img/team-next.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .packages {
@@ -2560,6 +2617,7 @@ body.burger-menu-open {
   }
 }
 .callback-form__label {
+  position: relative;
   width: 410px;
   height: 85px;
   border-radius: 10px;
@@ -2580,6 +2638,11 @@ body.burger-menu-open {
   border: none;
   padding: 20px;
   width: 409px;
+}
+.callback-form__input + .error {
+  position: absolute;
+  top: -20px;
+  color: red;
 }
 @media screen and (max-width: 480px) {
   .callback-form__input {
@@ -2721,12 +2784,22 @@ body.burger-menu-open {
 }
 
 .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
   display: none;
 }
 .popup__visible {
   display: block;
 }
 .popup__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 870px;
   border-radius: 30px;
   padding: 90px 210px;

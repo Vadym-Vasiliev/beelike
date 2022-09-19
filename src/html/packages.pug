@@ -1,12 +1,12 @@
 section.packages
   .container
     .packages__top
-      .packages__title.main-title
+      .packages__title.main-title(data-aos="zoom-in" data-aos-duration="1100")
         h2 Тарифні пакети
-      .packages__img
+      .packages__img(data-aos="fade-left" data-aos-duration="1100")
         img(src="img/logo.svg", alt="beelike logo")
     ul.packages-list
-      li.packages-list__item
+      li.packages-list__item(data-aos="fade-right" data-aos-duration="1100")
         .packages-list__top
           .packages-list__title
             h3 Тестовий пакет
@@ -38,8 +38,8 @@ section.packages
                   use(href="img/icons/icons.svg#packages-ok")
               .packages-infolist__text
                 p Супровід постачення від замовлення до відвантаження (в т.ч. документообіг та рекламації)
-        button.packages-list__btn.main-btn(type="button") Залишити заявку
-      li.packages-list__item
+        button.packages-list__btn.main-btn(type="button" id="open-form") Залишити заявку
+      li.packages-list__item(data-aos="fade-left" data-aos-duration="1100")
         .packages-list__top
           .packages-list__title
             h3 Пакет співпраці
@@ -65,7 +65,7 @@ section.packages
                   use(href="img/icons/icons.svg#packages-ok")
               .packages-infolist__text
                 p Закупка безлімітної кількості насіння, ЗЗР, добрив згідно запиту фермера
-        button.packages-list__btn.main-btn(type="button") Залишити заявку
+        button.packages-list__btn.main-btn(type="button" id="open-form") Залишити заявку
         
 
 

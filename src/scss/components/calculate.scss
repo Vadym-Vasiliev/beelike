@@ -3,6 +3,7 @@
   padding-top: 40px;
   padding-bottom: 70px;
   z-index: 1;
+  overflow: hidden;
 
   background-color: $blue-dark;
   // background-image: url(../../img/calculate-bg.png);
@@ -61,7 +62,7 @@
   &__right {
     position: absolute;
     top: -6%;
-    right: -25%;
+    right: -22.7%;
     z-index: -1;
 
     @include desktop-1680 {
@@ -98,6 +99,7 @@
   margin-bottom: 0;
 
   &__label {
+    position: relative;
     max-width: 520px;
     min-height: 75px;
     border-radius: 10px;
@@ -129,6 +131,13 @@
     width: 519px;
 
     background-color: transparent;
+
+    & + .error {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      color: red;
+    }
 
     @include tablet-768 {
       width: 450px;

@@ -1,13 +1,13 @@
 section.calculate
   .container
-    .calculate__right
+    .calculate__right(data-aos="fade-left"  data-aos-duration="1100")
       img(src="img/calculate-right.png", alt="people works")
     .calculate__body
       .calculate__left
-        .calculate__title.main-title
+        .calculate__title.main-title(data-aos="zoom-in" data-aos-duration="1100")
           h2 Давайте прорахуємо економію на замовленні?
         form.calculate-form
-          .calculate-form__dropdown
+          .calculate-form__dropdown(data-aos="fade-right" data-aos-duration="500")
             button(type="button").calculate-form__dropbtn Категорія
             ul.calculate-form__list
               li.calculate-form__item(data-value="value-1")
@@ -20,13 +20,13 @@ section.calculate
                 .calculate-form__text
                   p ЗЗР
             input.calculate-form__input-hidden(type="text" name="select-category" value="")
-          label.calculate-form__label
-            input.calculate-form__input(name="text" type="text" placeholder="Позиція")
-          label.calculate-form__label
-            input.calculate-form__input(name="text" type="text" placeholder="Кількість")
-          label.calculate-form__label
+          label.calculate-form__label(data-aos="fade-right" data-aos-duration="700")
+            input.calculate-form__input(name="field" type="text" placeholder="Позиція")
+          label.calculate-form__label(data-aos="fade-right" data-aos-duration="900")
+            input.calculate-form__input(name="number" type="text" placeholder="Кількість")
+          label.calculate-form__label(data-aos="fade-right" data-aos-duration="1100")
             input.calculate-form__input(name="text" type="text" placeholder="Населений пункт")
-          .calculate-form__btn-box
+          .calculate-form__btn-box(data-aos="fade-up" data-aos-duration="1100")
             button.calculate-form__btn.main-btn(type="submit") Порахувати заявку
         form.calculate-form
    

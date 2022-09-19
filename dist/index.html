@@ -8,6 +8,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
       <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
       <link rel="stylesheet" href="css/style.min.css"/>
       <title>beelike</title>
     </head>
@@ -19,30 +21,30 @@
           <div class="header__body">
             <div class="header__left">
               <div class="header__logo"><a href="#">
-                  <div class="header__img"><img src="img/logo.svg" alt="beelike logo"/></div></a></div>
+                  <div class="header__img"><img src="img/logo.svg" alt="beelike logo" data-aos="fade-right" data-aos-duration="1100"/></div></a></div>
             </div>
             <div class="header__menu">
               <ul class="header-list">
-                <li class="header-list__item"> <a class="header-list__link main-nav" href="#"><span>Про сервіс</span></a></li>
-                <li class="header-list__item"> <a class="header-list__link main-nav" href="#"><span>Команда</span></a></li>
-                <li class="header-list__item"> <a class="header-list__link main-nav" href="#"><span>Тарифи</span></a></li>
-                <li class="header-list__item"> <a class="header-list__link main-nav" href="#"><span>Подати заявку</span></a></li>
-                <li class="header-list__item"> <a class="header-list__link main-nav" href="#"><span>Контакти </span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="700"><a class="header-list__link main-nav" href="#"><span>Про сервіс</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1000"> <a class="header-list__link main-nav" href="#"><span>Команда</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1300"><a class="header-list__link main-nav" href="#"><span>Тарифи</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1600"><a class="header-list__link main-nav" href="#"><span>Подати заявку</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1900"><a class="header-list__link main-nav" href="#"><span>Контакти </span></a></li>
               </ul>
             </div>
             <div class="header__right-wrapper">
               <ul class="header-soclink">
-                <li class="header-soclink__item"><a class="header-soclink__link main-soclink" href="#">
+                <li class="header-soclink__item" data-aos="fade-left" data-aos-duration="2200"><a class="header-soclink__link main-soclink" href="#">
                     <svg class="header-soclink__img" width="28" height="28">
                       <use href="img/icons/icons.svg#instagram"></use>
                     </svg></a></li>
-                <li class="header-soclink__item"><a class="header-soclink__link main-soclink" href="#">
+                <li class="header-soclink__item" data-aos="fade-left" data-aos-duration="2500"><a class="header-soclink__link main-soclink" href="#">
                     <svg class="header-soclink__img" width="16" height="28">
                       <use href="img/icons/icons.svg#facebook"></use>
                     </svg></a></li>
               </ul>
               <div class="header__right">
-                <div class="header__tel"><a href="tel:+380934277900"><span>+ 380 93 427 79 00</span></a></div>
+                <div class="header__tel" data-aos="fade-left" data-aos-duration="2800"><a href="tel:+380934277900"><span>+ 380 93 427 79 00</span></a></div>
               </div>
             </div>
             <button class="header__burger" type="button"><span class="header__span"></span></button>
@@ -55,22 +57,22 @@
             <div class="main__body">
               <div class="main-left">
                 <div class="main-left__top">
-                  <div class="main-left__logo"><img src="img/team-logo.svg" alt="beelike logo"/></div>
-                  <div class="main-left__title main-title">
+                  <div class="main-left__logo" data-aos="fade-up" data-aos-duration="1100"><img src="img/team-logo.svg" alt="beelike logo"/></div>
+                  <div class="main-left__title main-title" data-aos="fade-up" data-aos-duration="1500">
                     <h1>Агросервіс по закупці</h1>
                   </div>
                   <div class="main-left__btns">
-                    <div class="main-left__btn-box">
-                      <button class="main-left__btn main-btn" type="button">Залишити заявку</button>
+                    <div class="main-left__btn-box" data-aos="fade-up" data-aos-duration="1100">
+                      <button class="main-left__btn main-btn" type="button" id="open-form">Залишити заявку</button>
                     </div>
-                    <div class="main-left__btn-box">
+                    <div class="main-left__btn-box" data-aos="fade-up" data-aos-duration="1500">
                       <button class="main-left__btn main-left__btn--bg main-btn" type="button">Дізнатись більше</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="main__img"><img src="img/main-bg.png" alt="man"/></div>
+            <div class="main__img" data-aos="fade-left" data-aos-duration="1100"><img src="img/main-bg.png" alt="man"/></div>
           </div>
         </section>
         <section class="runline">
@@ -101,34 +103,34 @@
         <section class="problems">
           <div class="container">
             <div class="problems__top">
-              <h2 class="problems__title main-title">Кожен український фермер знайомий з такими проблемами</h2>
+              <h2 class="problems__title main-title" data-aos="zoom-in" data-aos-duration="1100">Кожен український фермер знайомий з такими проблемами</h2>
             </div>
             <ul class="problems-list">
-              <li class="problems-list__item">
+              <li class="problems-list__item" data-aos="fade-up">
                 <div class="problems-list__img"><img src="img/problems-1.png" alt="money"/></div>
                 <div class="problems-list__text">
                   <p>Коли шукаєш де дешевше і  купуєш дорожче всіх сусідів</p>
                 </div>
               </li>
-              <li class="problems-list__item">
+              <li class="problems-list__item" data-aos="fade-up" data-aos-duration="700">
                 <div class="problems-list__img"><img src="img/problems-2.png" alt="money"/></div>
                 <div class="problems-list__text">
                   <p>Коли постійний потік дзвінків, і продають що треба і що ні</p>
                 </div>
               </li>
-              <li class="problems-list__item">
+              <li class="problems-list__item" data-aos="fade-up" data-aos-duration="1000">
                 <div class="problems-list__img"><img src="img/problems-3.png" alt="money"/></div>
                 <div class="problems-list__text">
                   <p>Коли треба на вчора, а ніхто не може поставити.</p>
                 </div>
               </li>
-              <li class="problems-list__item">
+              <li class="problems-list__item" data-aos="fade-up" data-aos-duration="1300">
                 <div class="problems-list__img"><img src="img/problems-4.png" alt="money"/></div>
                 <div class="problems-list__text">
                   <p>Коли потрапляєш на ненадійних постачальників, і не спиш ночами</p>
                 </div>
               </li>
-              <li class="problems-list__item">
+              <li class="problems-list__item" data-aos="fade-up" data-aos-duration="1600">
                 <div class="problems-list__img"><img src="img/problems-5.png" alt="money"/></div>
                 <div class="problems-list__text">
                   <p>Коли віриш постачальнику роками, а виявляється, що не треба було</p>
@@ -139,11 +141,11 @@
         </section>
         <section class="works">
           <div class="container">
-            <div class="works__title main-title">
+            <div class="works__title main-title" data-aos="zoom-in" data-aos-duration="1100">
               <h2>Як ми працюємо?</h2>
             </div>
             <div class="works__body">
-              <div class="works-left">
+              <div class="works-left" data-aos="fade-right" data-aos-duration="1100">
                 <div class="works-left__img"><img src="img/works-man.png" alt="man"/></div>
                 <div class="works-left__content">
                   <div class="works-left__title">
@@ -154,7 +156,7 @@
                   </div>
                 </div>
               </div>
-              <div class="works-right">
+              <div class="works-right" data-aos="fade-left" data-aos-duration="1100">
                 <div class="works-right__text">
                   <p>Більше 10 років я займався продажами. Це досвід дав мені розуміння того, як працює система продажів в Україні, розуміння націнок та довжину шляху, яким проходить продукція до фермера.</p>
                 </div>
@@ -171,8 +173,8 @@
         </section>
         <section class="beelike">
           <div class="container">
-            <div class="beelike__decor"><img src="img/beelike-decor.png" alt="decor"/></div>
-            <div class="beelike__title main-title">
+            <div class="beelike__decor" data-aos="zoom-in" data-aos-duration="1100"><img src="img/beelike-decor.png" alt="decor"/></div>
+            <div class="beelike__title main-title" data-aos="zoom-in" data-aos-duration="1100">
               <h2>Beelike - відділ закупок, інтегрований у ваш бізнес</h2>
             </div>
             <div class="beelike-body">
@@ -209,18 +211,18 @@
           <div class="container">
             <div class="scheme__body">
               <div class="scheme-top">
-                <div class="scheme__title main-title">
+                <div class="scheme__title main-title" data-aos="zoom-in" data-aos-duration="1100">
                   <h2>Ми працюємо за такою схемою</h2>
                 </div>
               </div>
               <div class="scheme-bottom">
                 <ul class="scheme-bottom__list">
-                  <li class="scheme-bottom__item scheme-bottom__item--1">
+                  <li class="scheme-bottom__item scheme-bottom__item--1" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="scheme-bottom__title scheme-bottom__title--1">
                       <p>Ваш запит</p>
                     </div>
                   </li>
-                  <li class="scheme-bottom__item scheme-bottom__item--2">
+                  <li class="scheme-bottom__item scheme-bottom__item--2" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="scheme-bottom__title scheme-bottom__title--2">
                       <p>Фіксуємо замовлення:</p>
                     </div>
@@ -242,7 +244,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="scheme-bottom__item scheme-bottom__item--3">
+                  <li class="scheme-bottom__item scheme-bottom__item--3" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="scheme-bottom__title scheme-bottom__title--3">
                       <p>Опрацьовуємо замовлення:</p>
                     </div>
@@ -269,12 +271,12 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="scheme-bottom__item scheme-bottom__item--4">
+                  <li class="scheme-bottom__item scheme-bottom__item--4" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="scheme-bottom__title scheme-bottom__title--4">
                       <p>ви оцінюєте економію та приймаєте рішення про покупку</p>
                     </div>
                   </li>
-                  <li class="scheme-bottom__item scheme-bottom__item--5">
+                  <li class="scheme-bottom__item scheme-bottom__item--5" data-aos="zoom-in" data-aos-duration="1100">
                     <div class="scheme-bottom__title scheme-bottom__title--5">
                       <p>Здійснюємо закупку:</p>
                     </div>
@@ -303,14 +305,14 @@
         </section>
         <section class="calculate">
           <div class="container">
-            <div class="calculate__right"><img src="img/calculate-right.png" alt="people works"/></div>
+            <div class="calculate__right" data-aos="fade-left" data-aos-duration="1100"><img src="img/calculate-right.png" alt="people works"/></div>
             <div class="calculate__body">
               <div class="calculate__left">
-                <div class="calculate__title main-title">
+                <div class="calculate__title main-title" data-aos="zoom-in" data-aos-duration="1100">
                   <h2>Давайте прорахуємо економію на замовленні?</h2>
                 </div>
                 <form class="calculate-form">
-                  <div class="calculate-form__dropdown">
+                  <div class="calculate-form__dropdown" data-aos="fade-right" data-aos-duration="500">
                     <button class="calculate-form__dropbtn" type="button">Категорія</button>
                     <ul class="calculate-form__list">
                       <li class="calculate-form__item" data-value="value-1">
@@ -331,16 +333,16 @@
                     </ul>
                     <input class="calculate-form__input-hidden" type="text" name="select-category" value=""/>
                   </div>
-                  <label class="calculate-form__label">
-                    <input class="calculate-form__input" name="text" type="text" placeholder="Позиція"/>
+                  <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="700">
+                    <input class="calculate-form__input" name="field" type="text" placeholder="Позиція"/>
                   </label>
-                  <label class="calculate-form__label">
-                    <input class="calculate-form__input" name="text" type="text" placeholder="Кількість"/>
+                  <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="900">
+                    <input class="calculate-form__input" name="number" type="text" placeholder="Кількість"/>
                   </label>
-                  <label class="calculate-form__label">
+                  <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="1100">
                     <input class="calculate-form__input" name="text" type="text" placeholder="Населений пункт"/>
                   </label>
-                  <div class="calculate-form__btn-box">
+                  <div class="calculate-form__btn-box" data-aos="fade-up" data-aos-duration="1100">
                     <button class="calculate-form__btn main-btn" type="submit">Порахувати заявку</button>
                   </div>
                 </form>
@@ -351,8 +353,8 @@
         </section>
         <section class="team">
           <div class="container">
-            <div class="team__bg"><img src="img/team-bg.png" alt="bg gray"/></div>
-            <div class="team__title main-title">
+            <div class="team__bg"> <img src="img/team-bg.png" alt="bg gray" data-aos="fade-right" data-aos-duration="1100"/></div>
+            <div class="team__title main-title" data-aos="zoom-in" data-aos-duration="1100">
               <h2>Beelike Команда</h2>
             </div>
             <div class="team__body">
@@ -401,7 +403,7 @@
                 </div>
               </div>
             </div>
-            <div class="team__bottom">
+            <div class="team__bottom" data-aos="fade-left" data-aos-duration="1100">
               <div class="team__img"><img src="img/team-text.png" alt="beelike logo"/></div>
               <div class="team__img"><img src="img/team-text.png" alt="beelike logo"/></div>
             </div>
@@ -410,13 +412,13 @@
         <section class="packages">
           <div class="container">
             <div class="packages__top">
-              <div class="packages__title main-title">
+              <div class="packages__title main-title" data-aos="zoom-in" data-aos-duration="1100">
                 <h2>Тарифні пакети</h2>
               </div>
-              <div class="packages__img"><img src="img/logo.svg" alt="beelike logo"/></div>
+              <div class="packages__img" data-aos="fade-left" data-aos-duration="1100"><img src="img/logo.svg" alt="beelike logo"/></div>
             </div>
             <ul class="packages-list">
-              <li class="packages-list__item">
+              <li class="packages-list__item" data-aos="fade-right" data-aos-duration="1100">
                 <div class="packages-list__top">
                   <div class="packages-list__title">
                     <h3>Тестовий пакет</h3>
@@ -469,9 +471,9 @@
                     </li>
                   </ul>
                 </div>
-                <button class="packages-list__btn main-btn" type="button">Залишити заявку</button>
+                <button class="packages-list__btn main-btn" type="button" id="open-form">Залишити заявку</button>
               </li>
-              <li class="packages-list__item">
+              <li class="packages-list__item" data-aos="fade-left" data-aos-duration="1100">
                 <div class="packages-list__top">
                   <div class="packages-list__title">
                     <h3>Пакет співпраці</h3>
@@ -514,24 +516,24 @@
                     </li>
                   </ul>
                 </div>
-                <button class="packages-list__btn main-btn" type="button">Залишити заявку</button>
+                <button class="packages-list__btn main-btn" type="button" id="open-form">Залишити заявку</button>
               </li>
             </ul>
           </div>
         </section>
         <section class="callback">
           <div class="container">
-            <div class="callback__title main-title">
+            <div class="callback__title main-title" data-aos="zoom-in" data-aos-duration="1100">
               <h2>Якщо у вас залишились запитання, ми зателефонуємо вам</h2>
             </div>
             <form class="callback-form">
-              <label class="callback-form__label">
-                <input class="callback-form__input" name="name" type="text" placeholder="Імя"/>
+              <label class="callback-form__label" data-aos="fade-up" data-aos-duration="700">
+                <input class="callback-form__input" name="field" type="text" placeholder="Імя"/>
               </label>
-              <label class="callback-form__label">
-                <input class="callback-form__input" name="tel" type="tel" placeholder="Телефон"/>
+              <label class="callback-form__label" data-aos="fade-up" data-aos-duration="1000">
+                <input class="callback-form__input" name="field" type="tel" placeholder="Телефон"/>
               </label>
-              <div class="callback-form__btn-bg"> 
+              <div class="callback-form__btn-bg" data-aos="fade-up" data-aos-duration="1300">
                 <button class="callback-form__btn main-btn" type="submit">Передзвонити мені</button>
               </div>
             </form>
@@ -543,18 +545,18 @@
           <div class="footer__body">
             <div class="footer__top">
               <div class="footer__logo"><a href="#"> 
-                  <div class="footer__img"><img src="img/logo.svg" alt="beelike logo"/></div></a></div>
+                  <div class="footer__img"><img src="img/logo.svg" alt="beelike logo" data-aos="fade-left" data-aos-duration="1100"/></div></a></div>
               <div class="footer-list-wrapper">
                 <ul class="footer-list">
-                  <li class="footer-list__item"><a class="footer-list__link main-nav" href="#">Про сервіс </a></li>
-                  <li class="footer-list__item"><a class="footer-list__link main-nav" href="#">Команда</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link main-nav" href="#">Тарифи</a></li>
-                  <li class="footer-list__item"><a class="footer-list__link main-nav" href="#">Подати заявку</a></li>
+                  <li class="footer-list__item" data-aos="fade-left" data-aos-duration="700"><a class="footer-list__link main-nav" href="#">Про сервіс </a></li>
+                  <li class="footer-list__item" data-aos="fade-left" data-aos-duration="1000"><a class="footer-list__link main-nav" href="#">Команда</a></li>
+                  <li class="footer-list__item" data-aos="fade-left" data-aos-duration="1300"><a class="footer-list__link main-nav" href="#">Тарифи</a></li>
+                  <li class="footer-list__item" data-aos="fade-left" data-aos-duration="1600"><a class="footer-list__link main-nav" href="#">Подати заявку</a></li>
                 </ul>
                 <ul class="footer-autlist">
-                  <li class="footer-autlist__item"><a class="footer-autlist__link" href="#">м. Вінниця, вул.Амосова, 26-а</a></li>
-                  <li class="footer-autlist__item"> <a class="footer-autlist__link" href="tel:+380934277900">+ 380 93 427 79 00</a></li>
-                  <li class="footer-autlist__item"><a class="footer-autlist__link" href="mailto:beelike.ceo@gmail.com">beelike.ceo@gmail.com</a></li>
+                  <li class="footer-autlist__item" data-aos="fade-left" data-aos-duration="700"><a class="footer-autlist__link" href="#">м. Вінниця, вул.Амосова, 26-а</a></li>
+                  <li class="footer-autlist__item" data-aos="fade-left" data-aos-duration="1000"><a class="footer-autlist__link" href="tel:+380934277900">+ 380 93 427 79 00</a></li>
+                  <li class="footer-autlist__item" data-aos="fade-left" data-aos-duration="1300"><a class="footer-autlist__link" href="mailto:beelike.ceo@gmail.com">beelike.ceo@gmail.com</a></li>
                 </ul>
               </div>
             </div>
