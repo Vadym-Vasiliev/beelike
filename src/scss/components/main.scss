@@ -78,8 +78,17 @@
     right: -20%;
     z-index: -1;
 
+    @include desktop-1920 {
+      right: -13%;
+    }
+
     @include desktop-1680 {
       bottom: -26%;
+      right: -4%;
+    }
+
+    @include desktop-1280 {
+      right: 0;
     }
 
     @include tablet {

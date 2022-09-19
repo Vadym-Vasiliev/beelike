@@ -657,9 +657,20 @@ body.burger-menu-open {
   right: -20%;
   z-index: -1;
 }
+@media screen and (max-width: 1920px) {
+  .main__img {
+    right: -13%;
+  }
+}
 @media screen and (max-width: 1680px) {
   .main__img {
     bottom: -26%;
+    right: -4%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main__img {
+    right: 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1023,11 +1034,7 @@ body.burger-menu-open {
 .beelike {
   padding-top: 70px;
   padding-bottom: 160px;
-  background-color: rgba(244, 244, 244, 0.5);
-  background-image: url(../../img/beelike-decor.png);
-  background-repeat: no-repeat;
-  background-size: 1790px;
-  background-position: 34px 275px;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .beelike {
@@ -1047,6 +1054,60 @@ body.burger-menu-open {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 370px;
+  }
+}
+.beelike > .container {
+  position: relative;
+}
+.beelike__decor {
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  width: 1790px;
+}
+@media screen and (max-width: 1680px) {
+  .beelike__decor {
+    width: 1567px;
+    left: -17%;
+    top: 26%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .beelike__decor {
+    width: 1367px;
+    left: -14%;
+    top: 29%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .beelike__decor {
+    width: 1280px;
+    left: -14%;
+    top: 31%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .beelike__decor {
+    width: 1024px;
+    left: -13%;
+    top: 85%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .beelike__decor {
+    width: 768;
+    left: -27%;
+    top: 88%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .beelike__decor {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beelike__decor {
+    display: none;
   }
 }
 .beelike__title {
