@@ -5,6 +5,24 @@
   z-index: 1;
   overflow: hidden;
 
+  & > .container {
+    position: relative;
+  }
+
+  @include tablet-768 {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 110px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 60%);
+      z-index: -1;
+
+      background-color: #eeeeee;
+    }
+  }
+
   @include mobile {
     &::after {
       content: "";
@@ -63,10 +81,19 @@
 
   &__bg {
     position: absolute;
-    left: -4%;
+    left: -30%;
     top: 50%;
     transform: translateY(-38%);
     z-index: -1;
+
+    @include desktop-1280 {
+      left: -42%;
+      top: 50%;
+    }
+
+    @include tablet-768 {
+      display: none;
+    }
 
     @include mobile {
       display: none;
