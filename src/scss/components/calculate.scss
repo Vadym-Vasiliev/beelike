@@ -10,6 +10,10 @@
   // background-size: contain;
   // background-position: right -1px;
 
+  & > .container {
+    position: relative;
+  }
+
   @include mobile {
     padding-top: 30px;
   }
@@ -17,6 +21,15 @@
   &__title {
     color: $white;
     margin-bottom: 40px;
+
+    @include tablet-768 {
+      font-size: 1.56rem;
+      line-height: 1.2;
+      margin-bottom: 350px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @include mobile {
       font-size: 1.56rem;
@@ -31,6 +44,14 @@
 
   &__body {
     display: flex;
+
+    @include tablet-768 {
+      justify-content: center;
+    }
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -39,12 +60,31 @@
 
   &__right {
     position: absolute;
-    top: -1px;
-    right: 0;
+    top: -6%;
+    right: -25%;
     z-index: -1;
 
+    @include desktop-1680 {
+      right: -5%;
+    }
+
+    @include desktop-1440 {
+      right: -2%;
+    }
+
+    @include desktop-1280 {
+      right: 0;
+    }
+
+    @include tablet-768 {
+      top: 9%;
+
+      width: 333px;
+    }
+
     @include mobile {
-      top: 150px;
+      top: 90px;
+      width: 333px;
     }
   }
 }

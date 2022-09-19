@@ -1724,6 +1724,9 @@ body.burger-menu-open {
   z-index: 1;
   background-color: #2b3546;
 }
+.calculate > .container {
+  position: relative;
+}
 @media screen and (max-width: 480px) {
   .calculate {
     padding-top: 30px;
@@ -1732,6 +1735,16 @@ body.burger-menu-open {
 .calculate__title {
   color: #ffffff;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .calculate__title {
+    font-size: 1.56rem;
+    line-height: 1.2;
+    margin-bottom: 350px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 480px) {
   .calculate__title {
@@ -1746,18 +1759,50 @@ body.burger-menu-open {
 .calculate__body {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .calculate__body {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .calculate__body {
+    justify-content: center;
+  }
+}
 .calculate__img {
   width: 905px;
 }
 .calculate__right {
   position: absolute;
-  top: -1px;
-  right: 0;
+  top: -6%;
+  right: -25%;
   z-index: -1;
+}
+@media screen and (max-width: 1680px) {
+  .calculate__right {
+    right: -5%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .calculate__right {
+    right: -2%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .calculate__right {
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calculate__right {
+    top: 9%;
+    width: 333px;
+  }
 }
 @media screen and (max-width: 480px) {
   .calculate__right {
-    top: 150px;
+    top: 90px;
+    width: 333px;
   }
 }
 
