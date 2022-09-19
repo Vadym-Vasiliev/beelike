@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/Vadym-Vasiliev/first-gulp#readme",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "@fancyapps/ui": "^4.0.31",
+    "gulp-cli": "^2.3.0",
+    "jquery": "^3.6.1",
+    "jquery-validation": "^1.19.5"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

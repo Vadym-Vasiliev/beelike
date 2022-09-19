@@ -1,0 +1,57 @@
+.popup {
+  // display: none;
+
+  &__visible {
+    display: block;
+  }
+
+  &__form {
+    max-width: 870px;
+    border-radius: 30px;
+    padding: 90px 210px;
+
+    background-color: #f4f4f4;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.87rem;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 444px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    color: $title;
+  }
+
+  &__label {
+    max-width: 410px;
+    height: 85px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 1.12rem;
+    line-height: 1.16;
+    opacity: 0.5;
+    border: none;
+    padding: 32px 20px 32px 20px;
+    width: 410px;
+  }
+
+  &__btn {
+    padding: 24px 110px;
+  }
+}
