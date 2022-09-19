@@ -22,6 +22,18 @@
     padding: 90px 210px;
 
     background-color: #f4f4f4;
+
+    @include tablet {
+      padding: 90px 160px;
+    }
+
+    @include tablet-768 {
+      padding: 90px 20px;
+    }
+
+    @include mobile {
+      padding: 60px 20px;
+    }
   }
 
   &__title {
@@ -35,6 +47,11 @@
     margin-bottom: 40px;
 
     color: $title;
+
+    @include mobile {
+      font-size: 1.56rem;
+      line-height: 1.2;
+    }
   }
 
   &__label {
@@ -50,6 +67,10 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+
+    @include mobile {
+      max-width: 290px;
+    }
   }
 
   &__input {
@@ -60,9 +81,19 @@
     border: none;
     padding: 32px 20px 32px 20px;
     width: 410px;
+
+    @include mobile {
+      width: 290px;
+    }
   }
 
   &__btn {
     padding: 24px 110px;
+
+    @include mobile {
+      padding: 24px 64px;
+      font-size: 1rem;
+      line-height: 1.18;
+    }
   }
 }

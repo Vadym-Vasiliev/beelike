@@ -2805,6 +2805,21 @@ body.burger-menu-open {
   padding: 90px 210px;
   background-color: #f4f4f4;
 }
+@media screen and (max-width: 1024px) {
+  .popup__form {
+    padding: 90px 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup__form {
+    padding: 90px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .popup__form {
+    padding: 60px 20px;
+  }
+}
 .popup__title {
   font-weight: 600;
   font-size: 1.87rem;
@@ -2815,6 +2830,12 @@ body.burger-menu-open {
   margin-right: auto;
   margin-bottom: 40px;
   color: #34495e;
+}
+@media screen and (max-width: 480px) {
+  .popup__title {
+    font-size: 1.56rem;
+    line-height: 1.2;
+  }
 }
 .popup__label {
   max-width: 410px;
@@ -2828,6 +2849,11 @@ body.burger-menu-open {
 .popup__label:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 480px) {
+  .popup__label {
+    max-width: 290px;
+  }
+}
 .popup__input {
   font-weight: 400;
   font-size: 1.12rem;
@@ -2837,6 +2863,18 @@ body.burger-menu-open {
   padding: 32px 20px 32px 20px;
   width: 410px;
 }
+@media screen and (max-width: 480px) {
+  .popup__input {
+    width: 290px;
+  }
+}
 .popup__btn {
   padding: 24px 110px;
+}
+@media screen and (max-width: 480px) {
+  .popup__btn {
+    padding: 24px 64px;
+    font-size: 1rem;
+    line-height: 1.18;
+  }
 }
