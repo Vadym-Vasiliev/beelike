@@ -1,7 +1,7 @@
 .team {
   position: relative;
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 210px;
   z-index: 1;
   overflow: hidden;
 
@@ -58,8 +58,9 @@
 
   &__body {
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
     gap: 150px;
+    align-items: center;
 
     @include desktop-1280 {
       gap: 50px;
@@ -79,6 +80,12 @@
     }
   }
 
+  &__body-item {
+    display: flex !important;
+    gap: 140px;
+    padding-top: 30px;
+  }
+
   &__bg {
     position: absolute;
     left: -30%;
@@ -87,7 +94,7 @@
     z-index: -1;
 
     @include desktop-1280 {
-      left: -42%;
+      left: -38%;
       top: 50%;
     }
 
@@ -97,6 +104,26 @@
 
     @include mobile {
       display: none;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    display: -webkit-inline-box;
+    gap: 30px;
+    margin-left: 500px;
+    margin-top: -15%;
+
+    z-index: -2;
+  }
+
+  &__img {
+    width: inherit;
+
+    @include mobile {
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -191,22 +218,8 @@
     }
   }
 
-  &__bottom {
-    position: relative;
-    display: -webkit-inline-box;
-    gap: 30px;
-    margin-left: -200px;
-    z-index: -2;
-  }
-
-  &__img {
-    width: inherit;
-
-    @include mobile {
-      width: 250px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  &__top {
+    text-align: center;
   }
 
   &__decor {
@@ -240,8 +253,40 @@
       }
     }
   }
+}
 
-  &__top {
-    text-align: center;
+.team .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0;
+
+  background-color: transparent;
+  background-image: url(../../img/team-prev.svg);
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    background-color: transparent;
+
+    background-image: url(../../img/team-next.svg);
+    background-repeat: no-repeat;
   }
 }

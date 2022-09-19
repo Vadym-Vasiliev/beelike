@@ -1,3 +1,96 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -860,9 +953,6 @@ body.burger-menu-open {
   box-shadow: 0px 6px 20px rgba(60, 99, 130, 0.15);
   border-radius: 15px;
   padding: 40px 20px;
-}
-.problems-list__item:not(:last-child) {
-  display: none;
 }
 .problems-list__img {
   width: 85px;
@@ -1993,7 +2083,7 @@ body.burger-menu-open {
 .team {
   position: relative;
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 210px;
   z-index: 1;
   overflow: hidden;
 }
@@ -2047,8 +2137,8 @@ body.burger-menu-open {
 }
 .team__body {
   display: flex;
-  align-items: flex-start;
   gap: 150px;
+  align-items: center;
 }
 @media screen and (max-width: 1280px) {
   .team__body {
@@ -2070,6 +2160,11 @@ body.burger-menu-open {
     gap: 100px;
   }
 }
+.team__body-item {
+  display: flex !important;
+  gap: 140px;
+  padding-top: 30px;
+}
 .team__bg {
   position: absolute;
   left: -30%;
@@ -2079,7 +2174,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 1280px) {
   .team__bg {
-    left: -42%;
+    left: -38%;
     top: 50%;
   }
 }
@@ -2091,6 +2186,24 @@ body.burger-menu-open {
 @media screen and (max-width: 480px) {
   .team__bg {
     display: none;
+  }
+}
+.team__bottom {
+  position: relative;
+  display: -webkit-inline-box;
+  gap: 30px;
+  margin-left: 500px;
+  margin-top: -15%;
+  z-index: -2;
+}
+.team__img {
+  width: inherit;
+}
+@media screen and (max-width: 480px) {
+  .team__img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -2185,22 +2298,8 @@ body.burger-menu-open {
     margin-bottom: 100px;
   }
 }
-.team-right__bottom {
-  position: relative;
-  display: -webkit-inline-box;
-  gap: 30px;
-  margin-left: -200px;
-  z-index: -2;
-}
-.team-right__img {
-  width: inherit;
-}
-@media screen and (max-width: 480px) {
-  .team-right__img {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.team-right__top {
+  text-align: center;
 }
 .team-right__decor {
   position: absolute;
@@ -2236,8 +2335,37 @@ body.burger-menu-open {
     width: 334px;
   }
 }
-.team-right__top {
-  text-align: center;
+
+.team .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url(../../img/team-prev.svg);
+  background-repeat: no-repeat;
+}
+.team .slick-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../img/team-next.svg);
+  background-repeat: no-repeat;
 }
 
 .packages {
