@@ -25,11 +25,11 @@
             </div>
             <div class="header__menu">
               <ul class="header-list">
-                <li class="header-list__item" data-aos="fade-down" data-aos-duration="700"><a class="header-list__link main-nav" href="#"><span>Про сервіс</span></a></li>
-                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1000"> <a class="header-list__link main-nav" href="#"><span>Команда</span></a></li>
-                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1300"><a class="header-list__link main-nav" href="#"><span>Тарифи</span></a></li>
-                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1600"><a class="header-list__link main-nav" href="#"><span>Подати заявку</span></a></li>
-                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1900"><a class="header-list__link main-nav" href="#"><span>Контакти </span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="700"><a class="header-list__link main-nav" href="#scheme"><span>Про сервіс</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1000"> <a class="header-list__link main-nav" href="#team"><span>Команда</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1300"><a class="header-list__link main-nav" href="#packages"><span>Тарифи</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1600"><a class="header-list__link main-nav" href="#callback"><span>Подати заявку</span></a></li>
+                <li class="header-list__item" data-aos="fade-down" data-aos-duration="1900"><a class="header-list__link main-nav" href="#footer"><span>Контакти </span></a></li>
               </ul>
             </div>
             <div class="header__right-wrapper">
@@ -63,10 +63,10 @@
                   </div>
                   <div class="main-left__btns">
                     <div class="main-left__btn-box" data-aos="fade-up" data-aos-duration="1100">
-                      <button class="main-left__btn main-btn" type="button" id="open-form">Залишити заявку</button>
+                      <button class="main-left__btn main-btn open-form-js" type="button">Залишити заявку</button>
                     </div>
                     <div class="main-left__btn-box" data-aos="fade-up" data-aos-duration="1500">
-                      <button class="main-left__btn main-left__btn--bg main-btn" type="button">Дізнатись більше</button>
+                      <button class="main-left__btn main-left__btn--bg main-btn open-form-js" type="button"> Дізнатись більше</button>
                     </div>
                   </div>
                 </div>
@@ -207,7 +207,7 @@
             </div>
           </div>
         </section>
-        <section class="scheme">
+        <section class="scheme" id="scheme">
           <div class="container">
             <div class="scheme__body">
               <div class="scheme-top">
@@ -334,24 +334,23 @@
                     <input class="calculate-form__input-hidden" type="text" name="select-category" value=""/>
                   </div>
                   <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="700">
-                    <input class="calculate-form__input" name="field" type="text" placeholder="Позиція"/>
+                    <input class="calculate-form__input" name="position" type="text" placeholder="Позиція"/>
                   </label>
                   <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="900">
-                    <input class="calculate-form__input" name="number" type="text" placeholder="Кількість"/>
+                    <input class="calculate-form__input" name="count" type="text" placeholder="Кількість"/>
                   </label>
                   <label class="calculate-form__label" data-aos="fade-right" data-aos-duration="1100">
-                    <input class="calculate-form__input" name="text" type="text" placeholder="Населений пункт"/>
+                    <input class="calculate-form__input" name="destination" type="text" placeholder="Населений пункт"/>
                   </label>
                   <div class="calculate-form__btn-box" data-aos="fade-up" data-aos-duration="1100">
                     <button class="calculate-form__btn main-btn" type="submit">Порахувати заявку</button>
                   </div>
                 </form>
-                <form class="calculate-form"></form>
               </div>
             </div>
           </div>
         </section>
-        <section class="team">
+        <section class="team" id="team">
           <div class="container">
             <div class="team__bg"> <img src="img/team-bg.png" alt="bg gray" data-aos="fade-right" data-aos-duration="1100"/></div>
             <div class="team__title main-title" data-aos="zoom-in" data-aos-duration="1100">
@@ -409,7 +408,7 @@
             </div>
           </div>
         </section>
-        <section class="packages">
+        <section class="packages" id="packages">
           <div class="container">
             <div class="packages__top">
               <div class="packages__title main-title" data-aos="zoom-in" data-aos-duration="1100">
@@ -471,7 +470,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="packages-list__btn main-btn" type="button" id="open-form">Залишити заявку</button>
+                <button class="packages-list__btn main-btn open-form-js" type="button" id="open-form">Залишити заявку</button>
               </li>
               <li class="packages-list__item" data-aos="fade-left" data-aos-duration="1100">
                 <div class="packages-list__top">
@@ -516,22 +515,22 @@
                     </li>
                   </ul>
                 </div>
-                <button class="packages-list__btn main-btn" type="button" id="open-form">Залишити заявку</button>
+                <button class="packages-list__btn main-btn open-form-js" type="button" id="open-form">Залишити заявку</button>
               </li>
             </ul>
           </div>
         </section>
-        <section class="callback">
+        <section class="callback" id="callback">
           <div class="container">
             <div class="callback__title main-title" data-aos="zoom-in" data-aos-duration="1100">
               <h2>Якщо у вас залишились запитання, ми зателефонуємо вам</h2>
             </div>
             <form class="callback-form">
               <label class="callback-form__label" data-aos="fade-up" data-aos-duration="700">
-                <input class="callback-form__input" name="field" type="text" placeholder="Імя"/>
+                <input class="callback-form__input" name="name" type="text" placeholder="Імя"/>
               </label>
               <label class="callback-form__label" data-aos="fade-up" data-aos-duration="1000">
-                <input class="callback-form__input" name="field" type="tel" placeholder="Телефон"/>
+                <input class="callback-form__input" name="phone" type="tel" placeholder="Телефон"/>
               </label>
               <div class="callback-form__btn-bg" data-aos="fade-up" data-aos-duration="1300">
                 <button class="callback-form__btn main-btn" type="submit">Передзвонити мені</button>
@@ -540,7 +539,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer__body">
             <div class="footer__top">
@@ -576,18 +575,18 @@
         </div>
       </footer>
       <div class="popup" id="form-content">
-        <div class="popup__form">
+        <form class="popup__form">
           <div class="popup__title">
             <h3>Заповніть форму, щоб зв’язатись з вами</h3>
           </div>
           <label class="popup__label">
-            <input class="popup__input" type="text" name="name" placeholder="Імя"/>
+            <input class="popup__input" type="text" name="nameForm" placeholder="Імя"/>
           </label>
           <label class="popup__label">
-            <input class="popup__input" type="text" name="name" placeholder="Телефон"/>
+            <input class="popup__input" type="text" name="phoneForm" placeholder="Телефон"/>
           </label>
           <button class="popup__btn main-btn" type="submit">Передзвонити мені</button>
-        </div>
+        </form>
       </div>
       <script src="js/app.min.js"></script>
     </div>

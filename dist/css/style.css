@@ -937,10 +937,15 @@ body.burger-menu-open {
   background-color: rgba(244, 244, 244, 0.5);
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .problems {
+    padding-bottom: 40px;
+  }
+}
 @media screen and (max-width: 480px) {
   .problems {
     padding-top: 30px;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
   }
 }
 .problems__top {
@@ -965,6 +970,9 @@ body.burger-menu-open {
   box-shadow: 0px 6px 20px rgba(60, 99, 130, 0.15);
   border-radius: 15px;
   padding: 40px 20px;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 .problems-list__img {
   width: 85px;
@@ -986,38 +994,41 @@ body.burger-menu-open {
 }
 
 .problems .slick-arrow {
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 50%;
+  display: none !important;
+}
+
+.problems .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 5px;
+}
+
+.problems .slick-active [id=slick-slide-control00],
+.problems .slick-active [id=slick-slide-control01],
+.problems .slick-active [id=slick-slide-control02],
+.problems .slick-active [id=slick-slide-control03],
+.problems .slick-active [id=slick-slide-control04],
+.problems .slick-active [id=slick-slide-control05] {
+  width: 9px;
+  height: 9px;
   background-color: #3c6382;
 }
-.problems .slick-arrow::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  display: block;
+
+.problems [id=slick-slide-control00],
+[id=slick-slide-control01],
+[id=slick-slide-control02],
+[id=slick-slide-control03],
+[id=slick-slide-control04],
+[id=slick-slide-control05] {
+  font-size: 0;
+  border: none;
   border-radius: 50%;
-  margin-left: 30px;
-  background-color: rgba(60, 99, 130, 0.262745098);
-}
-.problems .slick-arrow::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: block;
-  margin-left: -30px;
-  background-color: rgba(60, 99, 130, 0.262745098);
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+  transition: 250ms linear;
+  background-color: rgba(60, 99, 130, 0.2);
 }
 
 .works {
@@ -2039,6 +2050,7 @@ body.burger-menu-open {
 }
 .calculate-form__dropdown {
   position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .calculate-form__dropdown {
@@ -2149,7 +2161,7 @@ body.burger-menu-open {
   .team::after {
     content: "";
     position: absolute;
-    bottom: 110px;
+    bottom: 210px;
     left: 0;
     width: 100%;
     height: 40%;
@@ -2205,13 +2217,11 @@ body.burger-menu-open {
 @media screen and (max-width: 1024px) {
   .team__body {
     gap: 0;
-    flex-direction: column-reverse;
     align-items: center;
   }
 }
 @media screen and (max-width: 480px) {
   .team__body {
-    flex-direction: column-reverse;
     gap: 100px;
   }
 }
@@ -2219,6 +2229,17 @@ body.burger-menu-open {
   display: flex !important;
   gap: 140px;
   padding-top: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .team__body-item {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team__body-item {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
 }
 .team__bg {
   position: absolute;
@@ -2371,7 +2392,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 480px) {
   .team-right__decor {
-    top: 34%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -2408,6 +2429,11 @@ body.burger-menu-open {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 1024px) {
+  .team .slick-arrow {
+    bottom: -10%;
+  }
+}
 .team .slick-arrow::after {
   content: "";
   position: absolute;
@@ -2428,6 +2454,7 @@ body.burger-menu-open {
 .packages {
   padding-top: 70px;
   padding-bottom: 140px;
+  overflow: hidden;
   background-color: rgba(244, 244, 244, 0.5);
 }
 @media screen and (max-width: 480px) {
@@ -2638,6 +2665,7 @@ body.burger-menu-open {
   border: none;
   padding: 20px;
   width: 409px;
+  border-radius: 10px;
 }
 .callback-form__input + .error {
   position: absolute;
@@ -2675,6 +2703,8 @@ body.burger-menu-open {
 .footer {
   padding-top: 82px;
   padding-bottom: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 480px) {
   .footer {

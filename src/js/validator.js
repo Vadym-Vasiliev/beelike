@@ -7,17 +7,26 @@ $.validator.setDefaults({
   success: "valid",
 });
 
-$(".callback-form").validate({
+$(".calculate-form").validate({
   rules: {
-    field: {
+    position: {
+      required: true,
+    },
+    count: {
+      required: true,
+    },
+    destination: {
       required: true,
     },
   },
 });
 
-$(".calculate-form").validate({
+$(".callback-form").validate({
   rules: {
-    field: {
+    name: {
+      required: true,
+    },
+    phone: {
       required: true,
     },
   },
@@ -25,37 +34,32 @@ $(".calculate-form").validate({
 
 $(".popup__form").validate({
   rules: {
-    field: {
+    nameForm: {
+      required: true,
+    },
+
+    phoneForm: {
       required: true,
     },
   },
 });
 
-$("#open-form").on("click", () => {
+$(".open-form-js").on("click", () => {
   Fancybox.show([{ src: "#form-content", type: "inline" }]);
+  if ($(".calculate-form").valid()) {
+    Fancybox.show([{ src: "#form-content", type: "inline" }]);
+  }
+  if ($(".callback-form").valid()) {
+    Fancybox.show([{ src: "#form-content", type: "inline" }]);
+  }
+  if ($(".popup__form").valid()) {
+    Fancybox.show([{ src: "#form-content", type: "inline" }]);
+  }
 });
 
-$(".popup__btn").on("click", () => {
+$(".popup__btn").on("click", (e) => {
   Fancybox.close();
 });
-
-// $.validator.setDefaults({
-//   debug: true,
-//   success: "valid",
-// });
-
-// $(".causebox-bottom__form").validate({
-//   rules: {
-//     field: {
-//       required: true,
-//       email: true,
-//     },
-//   },
-// });
-
-// $(".popup-right__btn").on("click", () => {
-//   Fancybox.close();
-// });
 
 // $(".causebox-bottom__form").on("submit", () => {
 //   if ($(".causebox-bottom__form").valid()) {

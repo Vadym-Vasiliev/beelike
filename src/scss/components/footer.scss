@@ -1,6 +1,8 @@
 .footer {
   padding-top: 82px;
   padding-bottom: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
 
   @include mobile {
     padding-top: 45px;

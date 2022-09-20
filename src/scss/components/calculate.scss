@@ -187,6 +187,7 @@
 
   &__dropdown {
     position: relative;
+    z-index: 1;
 
     @include tablet-768 {
       width: 450px;

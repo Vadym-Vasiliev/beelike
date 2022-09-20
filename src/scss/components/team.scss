@@ -13,7 +13,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 110px;
+      bottom: 210px;
       left: 0;
       width: 100%;
       height: calc(100% - 60%);
@@ -70,12 +70,10 @@
 
     @include tablet {
       gap: 0;
-      flex-direction: column-reverse;
       align-items: center;
     }
 
     @include mobile {
-      flex-direction: column-reverse;
       gap: 100px;
     }
   }
@@ -84,6 +82,15 @@
     display: flex !important;
     gap: 140px;
     padding-top: 30px;
+
+    @include desktop-1280 {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
   }
 
   &__bg {
@@ -235,7 +242,7 @@
     }
 
     @include mobile {
-      top: 34%;
+      top: 48%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
@@ -272,6 +279,10 @@
   background-image: url(../../img/team-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @include tablet {
+    bottom: -10%;
+  }
 
   &::after {
     content: "";

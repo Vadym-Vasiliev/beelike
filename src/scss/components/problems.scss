@@ -4,9 +4,13 @@
   background-color: $second-bg;
   overflow: hidden;
 
+  @include tablet-768 {
+    padding-bottom: 40px;
+  }
+
   @include mobile {
     padding-top: 30px;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
   }
   &__top {
     margin-bottom: 80px;
@@ -26,14 +30,15 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  // @include tablet-768 {
-  //   flex-wrap: nowrap;
-  // }
   &__item {
     max-width: 234px;
     box-shadow: 0px 6px 20px rgba(60, 99, 130, 0.15);
     border-radius: 15px;
     padding: 40px 20px;
+
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__img {
     width: 85px;
@@ -57,41 +62,44 @@
 }
 
 .problems .slick-arrow {
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 50%;
+  display: none !important;
+}
+
+.problems .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 5px;
+}
 
-  background-color: $text;
+.problems .slick-active {
+  & [id="slick-slide-control00"],
+  [id="slick-slide-control01"],
+  [id="slick-slide-control02"],
+  [id="slick-slide-control03"],
+  [id="slick-slide-control04"],
+  [id="slick-slide-control05"] {
+    width: 9px;
+    height: 9px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border-radius: 50%;
-    margin-left: 30px;
-
-    background-color: #3c638243;
+    background-color: $text;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: block;
-    margin-left: -30px;
+.problems [id="slick-slide-control00"],
+[id="slick-slide-control01"],
+[id="slick-slide-control02"],
+[id="slick-slide-control03"],
+[id="slick-slide-control04"],
+[id="slick-slide-control05"] {
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
 
-    background-color: #3c638243;
-  }
+  transition: 250ms linear;
+
+  background-color: rgba(60, 99, 130, 0.2);
 }
