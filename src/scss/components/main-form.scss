@@ -55,6 +55,7 @@
   }
 
   &__label {
+    position: relative;
     max-width: 410px;
     height: 85px;
     border-radius: 10px;
@@ -84,6 +85,13 @@
 
     @include mobile {
       width: 290px;
+    }
+
+    & + .error {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      color: red;
     }
   }
 

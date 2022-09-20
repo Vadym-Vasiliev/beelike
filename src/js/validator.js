@@ -46,23 +46,10 @@ $(".popup__form").validate({
 
 $(".open-form-js").on("click", () => {
   Fancybox.show([{ src: "#form-content", type: "inline" }]);
-  if ($(".calculate-form").valid()) {
-    Fancybox.show([{ src: "#form-content", type: "inline" }]);
-  }
-  if ($(".callback-form").valid()) {
-    Fancybox.show([{ src: "#form-content", type: "inline" }]);
-  }
+});
+
+$(".popup__btn").on("click", () => {
   if ($(".popup__form").valid()) {
-    Fancybox.show([{ src: "#form-content", type: "inline" }]);
+    Fancybox.close();
   }
 });
-
-$(".popup__btn").on("click", (e) => {
-  Fancybox.close();
-});
-
-// $(".causebox-bottom__form").on("submit", () => {
-//   if ($(".causebox-bottom__form").valid()) {
-//     Fancybox.show([{ src: "#dialog-content", type: "inline" }]);
-//   }
-// });

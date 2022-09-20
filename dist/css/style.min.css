@@ -2868,6 +2868,7 @@ body.burger-menu-open {
   }
 }
 .popup__label {
+  position: relative;
   max-width: 410px;
   height: 85px;
   border-radius: 10px;
@@ -2897,6 +2898,12 @@ body.burger-menu-open {
   .popup__input {
     width: 290px;
   }
+}
+.popup__input + .error {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: red;
 }
 .popup__btn {
   padding: 24px 110px;
