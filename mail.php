@@ -12,3 +12,5 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
+
+<!-- beelike.ceo@gmail.com -->
