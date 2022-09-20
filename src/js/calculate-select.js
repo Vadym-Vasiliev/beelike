@@ -22,10 +22,14 @@ document
     const dropDownInput = dropDownWrapper.querySelector(
       ".calculate-form__input-hidden"
     );
+    const dropDownArrow = dropDownWrapper.querySelector(
+      ".calculate-form__dropbtn"
+    );
 
     // клік по кнопці
     dropDownBtn.addEventListener("click", function (e) {
       dropDownList.classList.toggle("calculate-form__list--visible");
+      dropDownArrow.classList.toggle("calculate-form__dropbtn--up");
     });
 
     //вибір елемента

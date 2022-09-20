@@ -6,10 +6,6 @@
   overflow: hidden;
 
   background-color: $blue-dark;
-  // background-image: url(../../img/calculate-bg.png);
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position: right -1px;
 
   & > .container {
     position: relative;
@@ -214,6 +210,11 @@
 
     color: $text;
     background-color: $white;
+
+    &.calculate-form__dropbtn--up::after {
+      border-width: 0 7px 12.1px 7px;
+      border-color: transparent transparent #3c6382 transparent;
+    }
 
     @include mobile {
       font-size: 1rem;

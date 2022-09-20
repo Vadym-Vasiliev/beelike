@@ -3,7 +3,7 @@
   padding-bottom: 150px;
   padding-top: 100px;
 
-  background-image: url(../../img/scheme-decor.png);
+  background-image: url(../img/scheme-decor.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1700px;
@@ -15,7 +15,7 @@
   @include tablet-768 {
     padding-bottom: 100px;
 
-    background-image: url(../../img/scheme-mobile-decor.png);
+    background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 85%;
@@ -25,7 +25,7 @@
     padding-bottom: 100px;
     padding-top: 50px;
 
-    background-image: url(../../img/scheme-mobile-decor.png);
+    background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 80%;
@@ -110,7 +110,7 @@
         height: 290px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-romb.png);
+        background-image: url(../img/scheme-romb.png);
         background-repeat: no-repeat;
         background-size: 250px;
       }
@@ -123,7 +123,7 @@
         width: 470px;
         height: 225px;
 
-        background-image: url(../../img/scheme-arrow-1.png);
+        background-image: url(../img/scheme-arrow-1.png);
         background-repeat: no-repeat;
         z-index: -1;
 
@@ -173,7 +173,7 @@
         height: 330px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-romb.png);
+        background-image: url(../img/scheme-romb.png);
         background-repeat: no-repeat;
       }
 
@@ -184,7 +184,7 @@
         right: 100%;
         width: 800px;
         height: 190px;
-        background-image: url(../../img/scheme-arrow-2.png);
+        background-image: url(../img/scheme-arrow-2.png);
         background-repeat: no-repeat;
         z-index: -1;
 
@@ -236,7 +236,7 @@
         height: 450px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-romb.png);
+        background-image: url(../img/scheme-romb.png);
         background-repeat: no-repeat;
         background-size: 400px;
 
@@ -270,7 +270,7 @@
         height: 100px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-arrow-3.png);
+        background-image: url(../img/scheme-arrow-3.png);
         background-repeat: no-repeat;
 
         @include desktop-1280 {
@@ -324,7 +324,7 @@
         height: 330px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-romb.png);
+        background-image: url(../img/scheme-romb.png);
         background-repeat: no-repeat;
       }
 
@@ -337,7 +337,7 @@
         height: 100px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-arrow-4.png);
+        background-image: url(../img/scheme-arrow-4.png);
         background-repeat: no-repeat;
 
         @include desktop-1280 {
@@ -391,7 +391,7 @@
         height: 330px;
         z-index: -1;
 
-        background-image: url(../../img/scheme-romb.png);
+        background-image: url(../img/scheme-romb.png);
         background-repeat: no-repeat;
       }
     }

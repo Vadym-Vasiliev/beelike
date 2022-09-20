@@ -2,6 +2,7 @@
   padding-top: 50px;
   padding-bottom: 100px;
   overflow: hidden;
+  overflow-x: hidden;
 
   @include mobile {
     padding-top: 40px;

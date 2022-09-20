@@ -242,7 +242,7 @@
     }
 
     @include mobile {
-      top: 48%;
+      top: 44%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
@@ -276,7 +276,7 @@
   font-size: 0;
 
   background-color: transparent;
-  background-image: url(../../img/team-prev.svg);
+  background-image: url(../img/team-prev.svg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -298,7 +298,7 @@
 
     background-color: transparent;
 
-    background-image: url(../../img/team-next.svg);
+    background-image: url(../img/team-next.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
