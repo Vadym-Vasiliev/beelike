@@ -1,11 +1,11 @@
 .popup(id="form-content")
-  form.popup__form
+  form.popup__form(method="POST" action="./mail.php")
     .popup__title
       h3 Заповніть форму, щоб зв’язатись з вами
     label.popup__label
-      input.popup__input(type="text" name="nameForm" placeholder="Імя")
+      input.popup__input(type="text" name="name" placeholder="Імя")
     label.popup__label
-      input.popup__input(type="text" name="phoneForm" placeholder="Телефон")
+      input.popup__input(type="text" name="phone" placeholder="Телефон")
     button.popup__btn.main-btn.btn-form-sub(type="submit") Передзвонити мені
 
 

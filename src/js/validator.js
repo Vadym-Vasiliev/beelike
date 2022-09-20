@@ -34,11 +34,11 @@ $(".callback-form").validate({
 
 $(".popup__form").validate({
   rules: {
-    nameForm: {
+    name: {
       required: true,
     },
 
-    phoneForm: {
+    phone: {
       required: true,
     },
   },
@@ -48,8 +48,10 @@ $(".open-form-js").on("click", () => {
   Fancybox.show([{ src: "#form-content", type: "inline" }]);
 });
 
-$(".popup__btn").on("click", () => {
+$(".popup__form").on("submit", (e) => {
   if ($(".popup__form").valid()) {
     Fancybox.close();
+  } else {
+    e.preventDefault();
   }
 });

@@ -565,15 +565,15 @@
         </div>
       </footer>
       <div class="popup" id="form-content">
-        <form class="popup__form">
+        <form class="popup__form" method="POST" action="./mail.php">
           <div class="popup__title">
             <h3>Заповніть форму, щоб зв’язатись з вами</h3>
           </div>
           <label class="popup__label">
-            <input class="popup__input" type="text" name="nameForm" placeholder="Імя"/>
+            <input class="popup__input" type="text" name="name" placeholder="Імя"/>
           </label>
           <label class="popup__label">
-            <input class="popup__input" type="text" name="phoneForm" placeholder="Телефон"/>
+            <input class="popup__input" type="text" name="phone" placeholder="Телефон"/>
           </label>
           <button class="popup__btn main-btn btn-form-sub" type="submit">Передзвонити мені</button>
         </form>
