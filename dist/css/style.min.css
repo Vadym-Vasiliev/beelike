@@ -485,7 +485,7 @@ body.burger-menu-open {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   z-index: 2;
   padding-top: 40px;
