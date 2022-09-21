@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "wellrespectedman5@gmail.com"; // this is your Email address
+    $to = "bulka980801@gmail.com"; // this is your Email address
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $subject = "Form submission";
@@ -12,3 +12,5 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
+
+<!-- beelike.ceo@gmail.com -->

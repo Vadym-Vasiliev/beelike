@@ -49,9 +49,28 @@ $(".open-form-js").on("click", () => {
 });
 
 $(".popup__form").on("submit", (e) => {
-  if ($(".popup__form").valid()) {
-    Fancybox.close();
-  } else {
-    e.preventDefault();
-  }
+  $.ajax({
+    type: "POST",
+    url: "./mail.php",
+    data: { name: "John" },
+    success: function (data) {
+      // ТУТ ЗАКРИВАЄШ МОДАЛКУ
+      if ($(".popup__form").valid()) {
+        Fancybox.close();
+      } else {
+        e.preventDefault();
+      }
+    },
+    error: function (xhr, status, error) {
+      console.error(xhr);
+    },
+  });
+});
+
+$(".calculate-form").on("submit", (e) => {
+  e.preventDefault();
+});
+
+$(".callback-form").on("submit", (e) => {
+  e.preventDefault();
 });
