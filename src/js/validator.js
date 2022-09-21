@@ -52,7 +52,7 @@ $(".popup__form").on("submit", (e) => {
   if ($(".popup__form").valid()) {
     $.ajax({
       type: "POST",
-      url: "./mail.php",
+      url: `./mail.php`,
       data: { name: "John" },
       success: function (data) {
         // ТУТ ЗАКРИВАЄШ МОДАЛКУ
