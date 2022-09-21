@@ -50,7 +50,18 @@ $(".open-form-js").on("click", () => {
 
 $(".popup__form").on("submit", (e) => {
   if ($(".popup__form").valid()) {
-    Fancybox.close();
+    $.ajax({
+      type: "POST",
+      url: "./mail.php",
+      data: { name: "John" },
+      success: function (data) {
+        // ТУТ ЗАКРИВАЄШ МОДАЛКУ
+        Fancybox.close();
+      },
+      error: function (xhr, status, error) {
+        console.error(xhr);
+      },
+    });
   } else {
     e.preventDefault();
   }
