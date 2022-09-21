@@ -1130,6 +1130,7 @@ body.burger-menu-open {
     max-width: 290px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 .works-right__text {
