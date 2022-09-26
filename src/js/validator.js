@@ -18,6 +18,9 @@ $(".calculate-form").validate({
     destination: {
       required: true,
     },
+    tel: {
+      required: true,
+    },
   },
 });
 

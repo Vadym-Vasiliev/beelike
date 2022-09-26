@@ -27,11 +27,6 @@
     gap: 10px;
 
     @include tablet-768 {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    @include tablet-768 {
       gap: 20px;
     }
 
@@ -83,7 +78,8 @@
     }
 
     @include tablet-768 {
-      margin-left: 0;
+      flex-direction: row-reverse;
+      margin-left: auto;
     }
 
     @include mobile {
@@ -104,6 +100,10 @@
     z-index: 2;
 
     background-color: transparent;
+
+    @include tablet-768 {
+      display: block;
+    }
 
     @include mobile {
       display: block;
@@ -158,6 +158,9 @@
   }
 
   &__menu {
+    @include tablet-768 {
+      display: none;
+    }
     @include mobile {
       display: none;
     }
@@ -193,7 +196,7 @@
   }
 
   @include tablet {
-    margin-left: 195px;
+    margin-left: 165px;
   }
 
   @include tablet-768 {

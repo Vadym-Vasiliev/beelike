@@ -1,0 +1,75 @@
+.end-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  display: none;
+
+  &__visible {
+    display: block;
+  }
+
+  &__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 90px;
+    z-index: 4;
+
+    background-color: $white;
+  }
+
+  &__top {
+    width: 194px;
+    height: 194px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $accent;
+  }
+
+  &__img {
+    width: 76px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 510px;
+
+    text-align: center;
+  }
+
+  &__cross {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: block;
+    transition: 250ms linear;
+
+    &:hover,
+    &:focus {
+      .end-form__svg {
+        stroke: $accent;
+      }
+    }
+  }
+
+  &__svg {
+    transition: 250ms linear;
+    stroke: currentColor;
+  }
+}
