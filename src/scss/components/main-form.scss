@@ -36,6 +36,26 @@
     }
   }
 
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    z-index: 2;
+
+    &:hover,
+    &:focus {
+      .popup__svg {
+        stroke: $accent;
+      }
+    }
+  }
+
+  &__svg {
+    transition: 250ms linear;
+    stroke: currentColor;
+  }
+
   &__title {
     font-weight: 600;
     font-size: 1.87rem;

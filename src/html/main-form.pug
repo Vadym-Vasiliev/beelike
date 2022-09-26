@@ -1,5 +1,8 @@
 .popup(id="form-content")
   form.popup__form(method="POST" action="./mail.php")
+    a.popup__cross(href="#")
+      svg.popup__svg(width="20" height="20")
+        use(href="img/icons/icons.svg#cross-end-form")
     .popup__title
       h3 Заповніть форму, щоб зв’язатись з вами
     label.popup__label

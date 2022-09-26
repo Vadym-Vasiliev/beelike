@@ -2879,6 +2879,20 @@ body.burger-menu-open {
     padding: 60px 20px;
   }
 }
+.popup__cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  z-index: 2;
+}
+.popup__cross:hover .popup__svg, .popup__cross:focus .popup__svg {
+  stroke: #f8b053;
+}
+.popup__svg {
+  transition: 250ms linear;
+  stroke: currentColor;
+}
 .popup__title {
   font-weight: 600;
   font-size: 1.87rem;
@@ -2951,6 +2965,7 @@ body.burger-menu-open {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.2);
   display: none;
 }
@@ -2965,7 +2980,6 @@ body.burger-menu-open {
   max-width: 700px;
   border-radius: 20px;
   padding: 90px;
-  z-index: 4;
   background-color: #ffffff;
 }
 .end-form__top {

@@ -58,3 +58,7 @@ $(".popup__form").on("submit", (e) => {
     e.preventDefault();
   }
 });
+
+$(".popup__cross").on("click", () => {
+  Fancybox.close();
+});
