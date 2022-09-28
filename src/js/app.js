@@ -5,5 +5,6 @@ import "./burger-menu.js";
 import "./slider.js";
 import "./validator.js";
 import "./animation.js";
+import "./end-form.js";
 
 flsFunctions.isWebp();
