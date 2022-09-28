@@ -488,9 +488,9 @@ body.burger-menu-open {
   width: 100%;
   overflow: hidden;
   z-index: 2;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -738,7 +738,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 768px) {
   .main {
-    padding-top: 270px;
+    padding-top: 100px;
     padding-bottom: 450px;
     overflow: hidden;
   }
@@ -2966,14 +2966,11 @@ body.burger-menu-open {
   bottom: 0;
   right: 0;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.2);
   display: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .end-form__visible {
   display: block;
-}
-.end-form--hidden {
-  display: none;
 }
 .end-form__body {
   position: absolute;

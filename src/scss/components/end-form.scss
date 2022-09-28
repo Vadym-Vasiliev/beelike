@@ -5,17 +5,12 @@
   bottom: 0;
   right: 0;
   z-index: 2;
+  display: none;
 
   background-color: rgba(255, 255, 255, 0.2);
 
-  display: none;
-
   &__visible {
     display: block;
-  }
-
-  &--hidden {
-    display: none;
   }
 
   &__body {
