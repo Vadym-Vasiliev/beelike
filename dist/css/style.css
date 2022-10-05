@@ -580,6 +580,11 @@ body.burger-menu-open {
   z-index: 2;
   background-color: transparent;
 }
+@media screen and (max-width: 1024px) {
+  .header__burger {
+    display: block;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__burger {
     display: block;
@@ -626,6 +631,11 @@ body.burger-menu-open {
 .header__span::after {
   margin-top: -7px;
 }
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__menu {
     display: none;
@@ -662,11 +672,12 @@ body.burger-menu-open {
 @media screen and (max-width: 1280px) {
   .header-list {
     row-gap: 20px;
+    margin-left: 45px;
   }
 }
 @media screen and (max-width: 1024px) {
   .header-list {
-    margin-left: 165px;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1210,7 +1221,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 768px) {
   .beelike {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 100px;
     background-image: url(../img/beelike-mobile-decor.png);
     background-repeat: no-repeat;
@@ -1220,8 +1231,8 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 480px) {
   .beelike {
-    padding-top: 50px;
     padding-bottom: 100px;
+    padding-top: 90px;
     background-image: url(../img/beelike-mobile-decor.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1444,6 +1455,7 @@ body.burger-menu-open {
 @media screen and (max-width: 768px) {
   .scheme {
     padding-bottom: 100px;
+    padding-top: 80px;
     background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
@@ -1453,16 +1465,11 @@ body.burger-menu-open {
 @media screen and (max-width: 480px) {
   .scheme {
     padding-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 90px;
     background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 80%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .scheme {
-    padding-top: 50px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2212,7 +2219,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 480px) {
   .team {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
@@ -2488,7 +2495,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 480px) {
   .packages {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 50px;
   }
 }
@@ -2655,7 +2662,7 @@ body.burger-menu-open {
 }
 @media screen and (max-width: 480px) {
   .callback {
-    padding-top: 58px;
+    padding-top: 90px;
     padding-bottom: 64px;
   }
 }

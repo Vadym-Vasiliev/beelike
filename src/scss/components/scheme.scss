@@ -14,6 +14,7 @@
 
   @include tablet-768 {
     padding-bottom: 100px;
+    padding-top: 80px;
 
     background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
@@ -23,16 +24,12 @@
 
   @include mobile {
     padding-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 90px;
 
     background-image: url(../img/scheme-mobile-decor.png);
     background-repeat: no-repeat;
     background-size: 375px;
     background-position: center 80%;
-  }
-
-  @include tablet-768 {
-    padding-top: 50px;
   }
 
   &__title {

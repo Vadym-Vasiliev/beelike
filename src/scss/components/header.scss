@@ -101,6 +101,10 @@
 
     background-color: transparent;
 
+    @include tablet {
+      display: block;
+    }
+
     @include tablet-768 {
       display: block;
     }
@@ -158,6 +162,9 @@
   }
 
   &__menu {
+    @include tablet {
+      display: none;
+    }
     @include tablet-768 {
       display: none;
     }
@@ -193,10 +200,11 @@
 
   @include desktop-1280 {
     row-gap: 20px;
+    margin-left: 45px;
   }
 
   @include tablet {
-    margin-left: 165px;
+    margin-left: auto;
   }
 
   @include tablet-768 {
